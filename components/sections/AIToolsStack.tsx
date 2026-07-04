@@ -11,9 +11,9 @@ export default function AIToolsStack() {
     <section className="relative py-24">
       <Container>
         <SectionHeading
-          eyebrow="The AI stack, run end to end"
-          title="Not just prompts — a full content operating system"
-          description="Every stage of the content lifecycle, backed by tools I run hands-on, not buzzwords I've read about."
+          eyebrow="The system, not the pitch deck"
+          title="This is the actual stack running a $1M+/month budget"
+          description="Not a wishlist. This is what's live at Deriv, across 15+ markets, right now."
           align="center"
         />
 

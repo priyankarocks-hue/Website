@@ -1,45 +1,61 @@
-// The AI systems Priyanka runs across the content lifecycle — ideation
-// through reporting. Update if your real tool stack changes.
+// The AI systems Priyanka has actually built and run at Deriv — a real
+// production stack, not a wishlist. Update if the real tool stack changes.
 
 export const aiStack = [
   {
-    stage: "Ideation",
-    description: "Finding what's worth writing before a single draft exists.",
+    stage: "Signal & Ideation",
+    description: "Finding what's worth making before a single brief exists.",
     tools: [
-      { name: "Claude & ChatGPT", use: "Topic mining, content briefs, and editorial angle testing" },
-      { name: "AnswerThePublic", use: "Surfacing the exact questions an audience is searching" },
-      { name: "MarketMuse / Frase", use: "Content-gap and topic-authority research" },
-      { name: "SparkToro", use: "Audience research — who to reach and where they actually are" },
+      {
+        name: "MCP-routed social listening",
+        use: "Hootsuite, Trustpilot, social DMs, and chatbot logs feed content and campaign priorities from real signal, not guesses",
+      },
+      {
+        name: "Attribution modelling",
+        use: "Reallocates budget toward what's actually converting before the next brief is written",
+      },
     ],
   },
   {
-    stage: "Generation",
-    description: "Producing on-brand content at a pace one editor alone couldn't match.",
+    stage: "AI-Augmented Production",
+    description: "Producing at scale without producing generic output.",
     tools: [
-      { name: "Claude & ChatGPT", use: "Long-form drafting, editing, and matching a brand's editorial voice" },
-      { name: "Jasper", use: "On-brand marketing copy at scale across campaigns" },
-      { name: "Midjourney / DALL·E", use: "Campaign visuals and social creative" },
-      { name: "Descript", use: "AI-assisted video and audio editing for talks and reels" },
+      {
+        name: "AI localization pipeline",
+        use: "Human-in-the-loop QA and brand glossaries across 15+ markets — doubled output, halved timelines, zero added headcount",
+      },
+      {
+        name: "AI workflow design with engineers",
+        use: "Built directly with AI engineers, not bolted on after the fact — automation designed around the funnel, not a prompt library",
+      },
     ],
   },
   {
-    stage: "Publishing & Distribution",
-    description: "Getting content live, everywhere it needs to be, without manual busywork.",
+    stage: "Distribution",
+    description: "Getting it in front of people, and machines, that matter.",
     tools: [
-      { name: "WordPress + AI SEO plugins", use: "On-page optimization at publish time" },
-      { name: "Buffer / Hootsuite", use: "AI-assisted scheduling and caption generation for social" },
-      { name: "Zapier / Make", use: "Automated publish-and-syndicate workflows across channels" },
-      { name: "Klaviyo / Mailchimp", use: "AI send-time and subject-line optimization for email" },
+      {
+        name: "SEO/GEO architecture",
+        use: "Schema markup, pillar pages, and intent-driven clusters engineered for visibility in AI Overviews and generative snippets",
+      },
+      {
+        name: "Programmatic & paid social",
+        use: "Scaled across 15+ markets on disciplined unit economics, not blind spend",
+      },
     ],
   },
   {
-    stage: "Tracking & Reporting",
+    stage: "Attribution & Reporting",
     description: "Proving what worked — in numbers a CFO will believe.",
     tools: [
-      { name: "Google Analytics 4", use: "AI-assisted traffic and behavior analysis" },
-      { name: "Looker Studio", use: "Automated executive dashboards" },
-      { name: "SEMrush / Ahrefs", use: "AI content and keyword-ranking tracking" },
-      { name: "HubSpot", use: "AI reporting for pipeline and content attribution" },
+      {
+        name: "HubSpot",
+        use: "Marketing automation and CRM running a $1M+/month budget across paid, organic, and partner channels",
+      },
+      {
+        name: "Funnel & ROAS analytics",
+        use: "The dashboards that turned a 300% uplift in DOAS from a claim into a number leadership signed off on",
+      },
     ],
   },
 ];

@@ -1,35 +1,35 @@
-// Topics grounded in Priyanka's real background — journalism, brand/PR, and
-// AI-augmented content operations. Update outcomes/wording as her talks evolve.
+// Topics grounded in Priyanka's real work — building AI-augmented growth
+// systems at Deriv across 15+ regulated markets. Update as her talks evolve.
 
 export const speakingTopics = [
   {
-    title: "AI Wrote It. Nobody Read It. Here's the Fix.",
+    title: "The MCP Pipeline Behind a $1M/Month Growth Engine",
     description:
-      "The uncomfortable truth about most AI content: it's fluent and forgettable. Here's the exact QA layer that keeps AI output from sounding like AI output.",
+      "How a social-listening system — Trustpilot, chatbot logs, social DMs — gets routed through MCP into real content and campaign priorities. Not vibes. Signal.",
     outcomes: [
-      "The one editorial check most teams skip when scaling AI content",
-      "Why 'AI-generated' and 'on-brand' aren't opposites, if you build the right QA layer",
-      "A framework you can put in place before your next sprint",
+      "The actual architecture of a signal-to-content pipeline",
+      "Why most 'AI-powered marketing' is really just a chatbot with extra steps",
+      "How to get your engineers and your marketing team building the same system",
     ],
   },
   {
-    title: "The Content Engine That Doesn't Sound Like a Template",
+    title: "AI Localization at Scale: Doubling Output Without Doubling Headcount",
     description:
-      "How to scale content production with AI without collapsing into generic, forgettable output — with real before/after numbers from a 40% traffic lift.",
+      "The human-in-the-loop system that shipped content across 15+ markets faster — without the brand voice collapsing into generic, forgettable output.",
     outcomes: [
-      "The content-ops stack that takes ideas from brief to published in days, not weeks",
-      "How to keep brand voice consistent across AI-assisted output at scale",
-      "Metrics that catch quality decay before your audience does",
+      "The QA layer that keeps AI-localized content from sounding translated",
+      "How brand glossaries prevent 15 markets from sounding like 15 different companies",
+      "The metrics that catch quality decay before your audience does",
     ],
   },
   {
-    title: "Why Your PR Team Should Be Running Your AI Strategy (Not IT)",
+    title: "SEO Is Dying. Here's What GEO Looks Like in Practice.",
     description:
-      "PR teams already know how to protect a brand's voice under pressure. That's exactly the skill most AI rollouts are missing — and exactly why PR belongs in the room.",
+      "Google AI Overviews and zero-click search broke the old SEO playbook. Here's the schema, pillar-page, and intent-cluster architecture that keeps you visible anyway.",
     outcomes: [
-      "A practical framework for media relations in the AI era",
-      "How to brief leadership so it turns into actual coverage, not just a memo",
-      "Talking points for legal/comms alignment on AI-generated public content",
+      "A practical framework for auditing your GEO readiness this quarter",
+      "What actually changes in content structure for AI-driven search",
+      "How to explain the zero-click threat to a leadership team that still reads last year's SEO report",
     ],
   },
 ];

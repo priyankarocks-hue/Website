@@ -17,9 +17,9 @@ export const serviceTiers: ServiceTier[] = [
     price: "$5,500",
     cadence: "one-time, 2 weeks",
     description:
-      "A fast, sharp read on your content and AI stack — what's working, what's embarrassing, what to fix first.",
+      "A fast, sharp read on your content, SEO/GEO, and AI stack — what's working, what's embarrassing, what to fix first.",
     deliverables: [
-      "Full content, brand voice, and AI-stack audit",
+      "Full content, SEO/GEO, and AI-workflow audit",
       "Opportunity map, ranked by effort vs. impact",
       "90-day plan you can run without me",
       "Live readout, no slide-deck theater",
@@ -31,12 +31,12 @@ export const serviceTiers: ServiceTier[] = [
     price: "$9,500",
     cadence: "per month",
     description:
-      "Marketing leadership that ships — brand, content systems, media relations, and AI execution — without the full-time salary or the ramp-up time.",
+      "Marketing leadership that ships — the same AI-augmented growth system running a $1M+/month budget, built for your team, without the full-time salary.",
     deliverables: [
       "Weekly working session with your team",
-      "I own content/brand strategy and get it shipped",
-      "Media relations that actually land coverage",
-      "Reporting your founder will actually read",
+      "AI-augmented growth systems built with your engineers, not just prompts",
+      "Attribution modelling that shows what's actually converting",
+      "GEO-ready SEO architecture for the AI-search era",
     ],
     cta: "Book an Intro Call",
     featured: true,

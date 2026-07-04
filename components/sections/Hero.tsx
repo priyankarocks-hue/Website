@@ -37,9 +37,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 max-w-2xl text-lg text-slate-300"
         >
-          I&apos;ve gotten AI-skeptical brands into Bloomberg and CNBC, pushed content
-          programs up 40%, and built comms teams from a headcount of one — now I build the
-          AI systems that make your content sound like a person wrote it, because one did.
+          I built the AI-powered growth engine behind a regulated FX platform live in 15+
+          markets — 4M+ acquisitions a year, a 300% uplift in DOAS, AI localization that
+          doubled output without adding headcount. Now I build that system for you.
         </motion.p>
 
         <motion.div

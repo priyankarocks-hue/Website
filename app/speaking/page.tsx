@@ -21,7 +21,7 @@ export default function SpeakingPage() {
           <SectionHeading
             eyebrow="Speaking"
             title="Keynotes and workshops on brand, content, and AI"
-            description="Two decades of newsroom discipline and boardroom results — talks that leave your audience with a plan they can act on the next morning."
+            description="No hype, no fear-mongering — talks that leave your audience with a plan they can act on the next morning."
           />
         </Container>
       </section>

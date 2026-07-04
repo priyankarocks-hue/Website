@@ -36,8 +36,8 @@ export default function Footer() {
             Priyanka Joshi<span className="text-neon-blue">.</span>
           </p>
           <p className="mt-3 max-w-xs text-sm text-slate-400">
-            Fractional CMO and keynote speaker turning 20+ years of newsroom and boardroom
-            experience into AI-powered content systems.
+            Fractional CMO and keynote speaker building AI content systems that don&apos;t
+            sound like a template.
           </p>
           <div className="mt-5 flex gap-4">
             {socialLinks.map((social) => (

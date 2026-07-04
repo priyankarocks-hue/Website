@@ -39,7 +39,7 @@ export default function AdvisoryPage() {
           <SectionHeading
             eyebrow="Advisory"
             title="Fractional CMO leadership for teams who want a plan, not a demo"
-            description="Two decades of newsroom and boardroom experience, now applied to your content, brand, and AI operations — no vendor kickbacks, no one-size-fits-all playbook."
+            description="A track record that includes Bloomberg and CNBC coverage, now applied to your content, brand, and AI stack — no vendor kickbacks, no one-size-fits-all playbook."
           />
         </Container>
       </section>

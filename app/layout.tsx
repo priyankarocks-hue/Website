@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | Priyanka Joshi",
   },
   description:
-    "Priyanka Joshi brings 20+ years of journalism, PR, and content marketing leadership to brands building AI-powered content and comms systems, and delivers keynotes on brand, content, and AI.",
+    "Priyanka Joshi builds AI content and comms systems for startups and SaaS teams who refuse to sound like a template, and speaks on brand, content, and AI.",
 };
 
 export default function RootLayout({

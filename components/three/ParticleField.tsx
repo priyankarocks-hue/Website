@@ -6,20 +6,28 @@ export default function ParticleField({ density = 1 }: { density?: number }) {
   return (
     <>
       <Sparkles
-        count={Math.round(140 * density)}
-        scale={[16, 10, 8]}
-        size={2.5}
-        speed={0.25}
-        opacity={0.6}
+        count={Math.round(220 * density)}
+        scale={[18, 11, 10]}
+        size={3}
+        speed={0.3}
+        opacity={0.8}
         color="#d7f24a"
       />
       <Sparkles
-        count={Math.round(90 * density)}
-        scale={[14, 8, 8]}
-        size={1.5}
-        speed={0.15}
-        opacity={0.45}
+        count={Math.round(160 * density)}
+        scale={[16, 9, 9]}
+        size={2}
+        speed={0.2}
+        opacity={0.65}
         color="#3b6fff"
+      />
+      <Sparkles
+        count={Math.round(60 * density)}
+        scale={[10, 6, 6]}
+        size={4}
+        speed={0.12}
+        opacity={0.5}
+        color="#ffffff"
       />
     </>
   );

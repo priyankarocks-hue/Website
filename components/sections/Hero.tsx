@@ -18,7 +18,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="text-sm font-semibold uppercase tracking-widest text-neon-blue"
         >
-          Fractional CMO &amp; AI Marketing Advisor
+          Fractional CMO for SaaS &amp; Startups
         </motion.p>
 
         <motion.h1
@@ -27,8 +27,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mt-6 max-w-3xl font-display text-4xl font-semibold leading-tight text-white sm:text-6xl"
         >
-          20+ years of newsroom discipline, now running your{" "}
-          <span className="text-gradient">AI content systems</span>.
+          AI wrote your content. Nobody read it.{" "}
+          <span className="text-gradient">Let&apos;s fix that.</span>
         </motion.h1>
 
         <motion.p
@@ -37,9 +37,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 max-w-2xl text-lg text-slate-300"
         >
-          I&apos;ve built comms functions from zero, landed coverage in Bloomberg and CNBC, and
-          scaled content programs 40% — now I bring that same rigor to AI-augmented
-          marketing systems that don&apos;t sound like everyone else&apos;s.
+          I&apos;ve gotten AI-skeptical brands into Bloomberg and CNBC, pushed content
+          programs up 40%, and built comms teams from a headcount of one — now I build the
+          AI systems that make your content sound like a person wrote it, because one did.
         </motion.p>
 
         <motion.div
@@ -48,7 +48,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-10 flex flex-wrap gap-4"
         >
-          <Button href="/contact">Book a Fractional CMO Call</Button>
+          <Button href="/contact">Book a Call</Button>
           <Button href="/speaking" variant="secondary">
             Book Me to Speak
           </Button>

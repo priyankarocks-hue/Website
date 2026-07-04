@@ -1,5 +1,5 @@
-// PLACEHOLDER CONTENT — replace pricing, deliverables, and Cal.com links
-// with your real advisory offer before launch.
+// PLACEHOLDER PRICING — deliverables reflect Priyanka's real areas of depth
+// (content systems, brand/PR, AI-augmented ops); confirm pricing before launch.
 
 type ServiceTier = {
   name: string;
@@ -13,30 +13,30 @@ type ServiceTier = {
 
 export const serviceTiers: ServiceTier[] = [
   {
-    name: "Strategy Sprint",
-    price: "$3,500",
+    name: "Content & Comms Audit",
+    price: "$5,500",
     cadence: "one-time, 2 weeks",
     description:
-      "A focused audit of where AI can and can't help your marketing funnel, with a concrete 90-day roadmap.",
+      "A senior-level audit of your content, brand, and comms operation — where AI genuinely accelerates output, and where it would just accelerate mediocrity.",
     deliverables: [
-      "Full funnel + tooling audit",
+      "Full content, brand voice, and comms-ops audit",
       "AI opportunity map ranked by effort vs. impact",
       "90-day implementation roadmap",
-      "Live readout session with your team",
+      "Live executive readout session",
     ],
-    cta: "Book a Strategy Sprint",
+    cta: "Book an Audit",
   },
   {
-    name: "Fractional AI Marketing Advisor",
-    price: "$6,000",
+    name: "Fractional CMO",
+    price: "$9,500",
     cadence: "per month",
     description:
-      "Ongoing hands-on advisory — weekly working sessions, async Slack access, and quarterly roadmap resets.",
+      "Ongoing, hands-on marketing leadership — brand, content systems, media relations, and AI-augmented execution, without a full-time hire.",
     deliverables: [
-      "Weekly 60-minute working session",
-      "Async Slack access for fast decisions",
-      "Quarterly strategy reset",
-      "Vendor/tool evaluation support",
+      "Weekly working session with your leadership team",
+      "Owns content/brand strategy and AI-augmented execution",
+      "Media relations and thought-leadership positioning",
+      "Quarterly strategy reset and board-ready reporting",
     ],
     cta: "Book an Intro Call",
     featured: true,
@@ -46,7 +46,7 @@ export const serviceTiers: ServiceTier[] = [
     price: "Custom",
     cadence: "per engagement",
     description:
-      "A keynote for your event followed by a half-day workshop to turn ideas into an action plan with your team.",
+      "A keynote for your event followed by a half-day workshop turning ideas into an action plan your team can run with.",
     deliverables: [
       "60-minute keynote, tailored to your audience",
       "Half-day hands-on workshop",

@@ -4,9 +4,9 @@ type ButtonVariant = "primary" | "secondary" | "ghost";
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-gradient-to-r from-neon-violet to-neon-cyan text-ink-950 font-semibold hover:brightness-110",
+    "bg-gradient-to-r from-neon-lime to-neon-blue text-ink-950 font-semibold hover:brightness-110",
   secondary:
-    "border border-white/15 text-white hover:border-neon-violet/60 hover:bg-white/5",
+    "border border-white/15 text-white hover:border-neon-lime/60 hover:bg-white/5",
   ghost: "text-white/80 hover:text-white",
 };
 

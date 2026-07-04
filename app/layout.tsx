@@ -19,11 +19,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Alex Rivera | AI Marketing Advisor & Speaker",
-    template: "%s | Alex Rivera",
+    default: "Priyanka Joshi | Fractional CMO & AI Marketing Advisor",
+    template: "%s | Priyanka Joshi",
   },
   description:
-    "Alex Rivera helps brands build AI-powered marketing systems that convert, and delivers keynotes on the future of AI in marketing.",
+    "Priyanka Joshi brings 20+ years of journalism, PR, and content marketing leadership to brands building AI-powered content and comms systems, and delivers keynotes on brand, content, and AI.",
 };
 
 export default function RootLayout({

@@ -15,7 +15,7 @@ export default function PageTeasers() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-sm font-semibold uppercase tracking-widest text-neon-cyan">About</p>
+          <p className="text-sm font-semibold uppercase tracking-widest text-neon-blue">About</p>
           <h2 className="mt-4 font-display text-3xl font-semibold text-white">
             {bio.shortBlurb}
           </h2>

@@ -34,7 +34,7 @@ export default function InsightsPage() {
           {posts.map((post) => (
             <Link key={post.slug} href={`/insights/${post.slug}`}>
               <GlassCard className="h-full">
-                <p className="text-xs uppercase tracking-widest text-neon-cyan">{post.date}</p>
+                <p className="text-xs uppercase tracking-widest text-neon-blue">{post.date}</p>
                 <h2 className="mt-3 font-display text-xl font-semibold text-white">
                   {post.title}
                 </h2>

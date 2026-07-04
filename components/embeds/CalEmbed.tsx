@@ -13,7 +13,7 @@ export default function CalEmbed({ calLink = DEFAULT_CAL_LINK }: { calLink?: str
       const cal = await getCalApi();
       cal("ui", {
         theme: "dark",
-        styles: { branding: { brandColor: "#8b5cf6" } },
+        styles: { branding: { brandColor: "#d7f24a" } },
         hideEventTypeDetails: false,
       });
     })();

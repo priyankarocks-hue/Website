@@ -6,7 +6,7 @@
     </linearGradient>
   </defs>
   <rect width="1280" height="720" fill="url(#g)"/>
-  <circle cx="640" cy="360" r="70" fill="rgba(139,92,246,0.25)"/>
-  <path d="M615 325 L680 360 L615 395 Z" fill="#8b5cf6"/>
+  <circle cx="640" cy="360" r="70" fill="rgba(59,111,255,0.3)"/>
+  <path d="M615 325 L680 360 L615 395 Z" fill="#d7f24a"/>
   <text x="640" y="470" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#94a3b8">Speaker reel placeholder — drop your video here</text>
 </svg>

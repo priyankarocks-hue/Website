@@ -35,12 +35,12 @@ export default async function InsightPostPage({
 
       <article className="py-20">
         <Container className="max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-neon-cyan">{post.meta.date}</p>
+          <p className="text-xs uppercase tracking-widest text-neon-blue">{post.meta.date}</p>
           <h1 className="mt-3 font-display text-3xl font-semibold text-white sm:text-4xl">
             {post.meta.title}
           </h1>
 
-          <div className="prose prose-invert prose-headings:font-display prose-a:text-neon-cyan mt-10 max-w-none">
+          <div className="prose prose-invert prose-headings:font-display prose-a:text-neon-blue mt-10 max-w-none">
             <MDXRemote source={post.content} />
           </div>
         </Container>

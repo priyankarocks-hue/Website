@@ -18,9 +18,8 @@
   --color-ink-900: #0b0d14;
   --color-ink-800: #12141f;
 
-  --color-neon-violet: #8b5cf6;
-  --color-neon-cyan: #22d3ee;
-  --color-neon-amber: #fbbf24;
+  --color-neon-lime: #d7f24a;
+  --color-neon-blue: #3b6fff;
 
   --font-sans: var(--font-body);
   --font-display: var(--font-display);
@@ -44,12 +43,12 @@ body {
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--color-neon-violet) 50%, transparent);
+  background: color-mix(in srgb, var(--color-neon-lime) 50%, transparent);
   color: #fff;
 }
 
 .text-gradient {
-  background-image: linear-gradient(90deg, var(--color-neon-violet), var(--color-neon-cyan));
+  background-image: linear-gradient(90deg, var(--color-neon-lime), var(--color-neon-blue));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -65,8 +64,8 @@ body {
 }
 
 .glass-card:hover {
-  border-color: rgba(139, 92, 246, 0.35);
-  box-shadow: 0 0 40px rgba(139, 92, 246, 0.15);
+  border-color: rgba(59, 111, 255, 0.4);
+  box-shadow: 0 0 40px rgba(59, 111, 255, 0.2);
   transform: translateY(-4px);
 }
 
@@ -76,7 +75,7 @@ body {
   top: 0;
   z-index: 100;
   padding: 0.75rem 1.25rem;
-  background: var(--color-neon-violet);
+  background: var(--color-neon-blue);
   color: #fff;
   border-radius: 0 0 0.5rem 0;
 }

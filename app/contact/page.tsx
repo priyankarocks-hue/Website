@@ -29,7 +29,7 @@ export default function ContactPage() {
         <Container className="grid gap-10 md:grid-cols-2 md:items-start">
           <ContactForm />
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-neon-cyan">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-neon-blue">
               Prefer to just grab time?
             </p>
             <CalEmbed calLink="your-username/intro-call" />

@@ -4,11 +4,11 @@ import Container from "@/components/ui/Container";
 import GlassCard from "@/components/ui/GlassCard";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CalEmbed from "@/components/embeds/CalEmbed";
-import { speakingTopics, pastEngagements } from "@/content/speakingTopics";
+import { speakingTopics, mediaFeatures } from "@/content/speakingTopics";
 
 export const metadata: Metadata = {
   title: "Speaking",
-  description: "Keynotes and workshops on where AI actually earns its keep in marketing.",
+  description: "Keynotes and workshops on brand, content, and where AI actually earns its keep.",
 };
 
 export default function SpeakingPage() {
@@ -20,8 +20,8 @@ export default function SpeakingPage() {
         <Container>
           <SectionHeading
             eyebrow="Speaking"
-            title="Keynotes and workshops on AI in marketing"
-            description="No hype, no fear-mongering — talks that leave your audience with a plan they can act on the next morning."
+            title="Keynotes and workshops on brand, content, and AI"
+            description="Two decades of newsroom discipline and boardroom results — talks that leave your audience with a plan they can act on the next morning."
           />
         </Container>
       </section>
@@ -53,7 +53,7 @@ export default function SpeakingPage() {
                 <ul className="mt-5 space-y-2 text-sm text-slate-400">
                   {topic.outcomes.map((outcome) => (
                     <li key={outcome} className="flex gap-2">
-                      <span className="text-neon-cyan">&bull;</span>
+                      <span className="text-neon-blue">&bull;</span>
                       {outcome}
                     </li>
                   ))}
@@ -67,12 +67,12 @@ export default function SpeakingPage() {
       <section className="py-16">
         <Container>
           <GlassCard>
-            <p className="text-sm font-semibold uppercase tracking-widest text-neon-cyan">
-              Past engagements
+            <p className="text-sm font-semibold uppercase tracking-widest text-neon-blue">
+              As featured in
             </p>
             <div className="mt-6 flex flex-wrap gap-x-10 gap-y-4 text-slate-300">
-              {pastEngagements.map((engagement) => (
-                <span key={engagement}>{engagement}</span>
+              {mediaFeatures.map((feature) => (
+                <span key={feature}>{feature}</span>
               ))}
             </div>
           </GlassCard>

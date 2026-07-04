@@ -20,7 +20,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-white/5 bg-ink-950/70 backdrop-blur-lg">
       <Container className="flex h-18 items-center justify-between py-4">
         <Link href="/" className="font-display text-lg font-semibold text-white">
-          Alex Rivera<span className="text-neon-cyan">.</span>
+          Priyanka Joshi<span className="text-neon-blue">.</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

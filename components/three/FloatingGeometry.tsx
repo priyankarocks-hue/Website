@@ -3,9 +3,9 @@
 import { Float, MeshDistortMaterial } from "@react-three/drei";
 
 const shapes = [
-  { position: [-3.2, 0.8, -2], geometry: "icosahedron", scale: 1.1, color: "#8b5cf6" },
-  { position: [3.4, -0.6, -3], geometry: "torus", scale: 0.9, color: "#22d3ee" },
-  { position: [0.6, 1.6, -4], geometry: "octahedron", scale: 0.7, color: "#8b5cf6" },
+  { position: [-3.2, 0.8, -2], geometry: "icosahedron", scale: 1.1, color: "#d7f24a" },
+  { position: [3.4, -0.6, -3], geometry: "torus", scale: 0.9, color: "#3b6fff" },
+  { position: [0.6, 1.6, -4], geometry: "octahedron", scale: 0.7, color: "#d7f24a" },
 ] as const;
 
 export default function FloatingGeometry() {

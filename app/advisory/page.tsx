@@ -8,7 +8,7 @@ import CalEmbed from "@/components/embeds/CalEmbed";
 
 export const metadata: Metadata = {
   title: "Advisory",
-  description: "AI marketing advisory services for teams who want a plan, not a tool demo.",
+  description: "Fractional CMO and AI marketing advisory for teams who want a plan, not a tool demo.",
 };
 
 const process = [
@@ -38,8 +38,8 @@ export default function AdvisoryPage() {
         <Container>
           <SectionHeading
             eyebrow="Advisory"
-            title="AI marketing advisory for teams who want a plan, not a demo"
-            description="Straightforward, funnel-first advisory work — no vendor kickbacks, no one-size-fits-all playbook."
+            title="Fractional CMO leadership for teams who want a plan, not a demo"
+            description="Two decades of newsroom and boardroom experience, now applied to your content, brand, and AI operations — no vendor kickbacks, no one-size-fits-all playbook."
           />
         </Container>
       </section>
@@ -56,7 +56,7 @@ export default function AdvisoryPage() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {process.map((item) => (
               <GlassCard key={item.step}>
-                <p className="font-display text-3xl font-semibold text-neon-cyan">{item.step}</p>
+                <p className="font-display text-3xl font-semibold text-neon-blue">{item.step}</p>
                 <h3 className="mt-3 font-display text-lg font-semibold text-white">{item.title}</h3>
                 <p className="mt-3 text-sm text-slate-300">{item.description}</p>
               </GlassCard>

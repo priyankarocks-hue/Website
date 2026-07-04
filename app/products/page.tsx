@@ -27,13 +27,13 @@ export default function ProductsPage() {
       <section className="pb-24">
         <Container className="grid gap-8 md:grid-cols-[1.4fr_1fr] md:items-start">
           <GlassCard>
-            <p className="text-sm font-semibold uppercase tracking-widest text-neon-cyan">
+            <p className="text-sm font-semibold uppercase tracking-widest text-neon-blue">
               What&apos;s inside
             </p>
             <ul className="mt-6 space-y-3 text-slate-200">
               {productOffer.curriculum.map((item) => (
                 <li key={item} className="flex gap-3">
-                  <span className="text-neon-cyan">&bull;</span>
+                  <span className="text-neon-blue">&bull;</span>
                   {item}
                 </li>
               ))}

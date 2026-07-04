@@ -37,7 +37,7 @@ export default function SceneCanvas({
       <PerformanceMonitor onDecline={() => setDpr(1)} onIncline={() => setDpr(1.5)} />
       {scrollProgressRef ? <ScrollCamera progressRef={scrollProgressRef} /> : null}
       <ambientLight intensity={0.6} />
-      <pointLight position={[5, 5, 5]} intensity={0.8} color="#8b5cf6" />
+      <pointLight position={[5, 5, 5]} intensity={0.8} color="#3b6fff" />
       <ParticleField density={variant === "hero" ? 1 : 0.5} />
       {variant === "hero" ? <FloatingGeometry /> : null}
     </Canvas>

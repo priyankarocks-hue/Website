@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 import BackgroundLayer from "@/components/three/BackgroundLayer";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
+import { mediaFeatures } from "@/content/speakingTopics";
 
 export default function Hero() {
   return (
@@ -16,9 +16,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-sm font-semibold uppercase tracking-widest text-neon-cyan"
+          className="text-sm font-semibold uppercase tracking-widest text-neon-blue"
         >
-          AI Marketing Advisor &amp; Speaker
+          Fractional CMO &amp; AI Marketing Advisor
         </motion.p>
 
         <motion.h1
@@ -27,8 +27,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mt-6 max-w-3xl font-display text-4xl font-semibold leading-tight text-white sm:text-6xl"
         >
-          Turning AI hype into <span className="text-gradient">marketing systems</span> that
-          actually convert.
+          20+ years of newsroom discipline, now running your{" "}
+          <span className="text-gradient">AI content systems</span>.
         </motion.h1>
 
         <motion.p
@@ -37,8 +37,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 max-w-2xl text-lg text-slate-300"
         >
-          I advise marketing teams and speak at events on where AI genuinely earns its keep
-          in the funnel &mdash; and where it quietly wastes budget.
+          I&apos;ve built comms functions from zero, landed coverage in Bloomberg and CNBC, and
+          scaled content programs 40% — now I bring that same rigor to AI-augmented
+          marketing systems that don&apos;t sound like everyone else&apos;s.
         </motion.p>
 
         <motion.div
@@ -47,7 +48,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-10 flex flex-wrap gap-4"
         >
-          <Button href="/contact">Book an Advisory Call</Button>
+          <Button href="/contact">Book a Fractional CMO Call</Button>
           <Button href="/speaking" variant="secondary">
             Book Me to Speak
           </Button>
@@ -60,25 +61,19 @@ export default function Hero() {
           className="mt-16 flex flex-wrap items-center gap-x-10 gap-y-4 opacity-70"
         >
           <span className="text-xs uppercase tracking-widest text-slate-500">
-            Trusted by marketing teams at
+            As featured in
           </span>
-          {["acme", "initech", "globex", "umbrella"].map((logo) => (
+          {mediaFeatures.map((feature) => (
             // eslint-disable-next-line @next/next/no-img-element
             <img
-              key={logo}
-              src={`/images/logos/${logo}.svg`}
+              key={feature}
+              src={`/images/logos/${feature.toLowerCase()}.svg`}
               alt=""
               aria-hidden="true"
               className="h-6 w-auto grayscale"
             />
           ))}
         </motion.div>
-
-        <p className="mt-2 text-xs text-slate-600">
-          <Link href="/about" className="underline decoration-dotted">
-            Placeholder client logos — replace before launch.
-          </Link>
-        </p>
       </Container>
     </section>
   );

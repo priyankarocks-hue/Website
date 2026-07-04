@@ -5,7 +5,7 @@ import GlassCard from "@/components/ui/GlassCard";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 import { bio } from "@/content/bio";
-import { pastEngagements } from "@/content/speakingTopics";
+import { mediaFeatures } from "@/content/speakingTopics";
 
 export const metadata: Metadata = {
   title: "About",
@@ -36,7 +36,7 @@ export default function AboutPage() {
             <ul className="mt-8 grid gap-3 sm:grid-cols-1">
               {bio.credentials.map((credential) => (
                 <li key={credential} className="flex items-center gap-3 text-sm text-slate-200">
-                  <span className="h-1.5 w-1.5 rounded-full bg-neon-cyan" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-neon-blue" />
                   {credential}
                 </li>
               ))}
@@ -55,17 +55,14 @@ export default function AboutPage() {
       <section className="py-16">
         <Container>
           <GlassCard>
-            <p className="text-sm font-semibold uppercase tracking-widest text-neon-cyan">
-              Past engagements
+            <p className="text-sm font-semibold uppercase tracking-widest text-neon-blue">
+              As featured in
             </p>
             <div className="mt-6 flex flex-wrap gap-x-10 gap-y-4 text-slate-300">
-              {pastEngagements.map((engagement) => (
-                <span key={engagement}>{engagement}</span>
+              {mediaFeatures.map((feature) => (
+                <span key={feature}>{feature}</span>
               ))}
             </div>
-            <p className="mt-6 text-xs text-slate-500">
-              Placeholder list — replace with your real past speaking engagements.
-            </p>
           </GlassCard>
         </Container>
       </section>

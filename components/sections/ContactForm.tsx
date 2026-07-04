@@ -50,7 +50,7 @@ export default function ContactForm() {
           id="name"
           name="name"
           required
-          className="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-neon-cyan focus:outline-none"
+          className="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-neon-blue focus:outline-none"
         />
       </div>
 
@@ -63,7 +63,7 @@ export default function ContactForm() {
           name="email"
           type="email"
           required
-          className="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-neon-cyan focus:outline-none"
+          className="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-neon-blue focus:outline-none"
         />
       </div>
 
@@ -74,7 +74,7 @@ export default function ContactForm() {
         <select
           id="reason"
           name="reason"
-          className="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white focus:border-neon-cyan focus:outline-none"
+          className="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white focus:border-neon-blue focus:outline-none"
         >
           <option value="Advisory inquiry">Advisory inquiry</option>
           <option value="Speaking inquiry">Speaking inquiry</option>
@@ -92,14 +92,14 @@ export default function ContactForm() {
           name="message"
           required
           rows={5}
-          className="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-neon-cyan focus:outline-none"
+          className="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-neon-blue focus:outline-none"
         />
       </div>
 
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="w-full rounded-full bg-gradient-to-r from-neon-violet to-neon-cyan px-6 py-3 text-sm font-semibold text-ink-950 transition hover:brightness-110 disabled:opacity-60"
+        className="w-full rounded-full bg-gradient-to-r from-neon-lime to-neon-blue px-6 py-3 text-sm font-semibold text-ink-950 transition hover:brightness-110 disabled:opacity-60"
       >
         {status === "submitting" ? "Sending..." : "Send message"}
       </button>

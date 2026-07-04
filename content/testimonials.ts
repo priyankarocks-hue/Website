@@ -4,20 +4,20 @@
 export const testimonials = [
   {
     quote:
-      "Alex didn't just tell us to 'use AI more' — the roadmap showed exactly where our team was wasting time and where a tool could actually replace a headcount request.",
+      "Priyanka didn't just tell us to 'use AI more' — she showed exactly where our content ops were slow, and where a system could do the work of three hires.",
     name: "Jordan Lee",
-    role: "VP Marketing, mid-size SaaS company",
+    role: "VP Communications, consumer brand",
   },
   {
     quote:
-      "The keynote was the first AI talk at our conference that wasn't either fear-mongering or a sales pitch. Attendees were still talking about it at the after-party.",
+      "The keynote was the first talk at our conference grounded in an actual newsroom background, not just marketing theory. Attendees were still quoting it at the after-party.",
     name: "Morgan Patel",
-    role: "Events Director, B2B Growth Conference",
+    role: "Events Director, Brand & Comms Summit",
   },
   {
     quote:
-      "Three months into the fractional advisory engagement, our content output doubled without losing the voice that makes our brand ours.",
+      "Three months into the fractional CMO engagement, our content output doubled and our press coverage tripled — without losing the voice that makes our brand ours.",
     name: "Sam Okafor",
-    role: "Head of Content, consumer subscription brand",
+    role: "Founder, D2C consumer brand",
   },
 ];

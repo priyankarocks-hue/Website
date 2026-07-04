@@ -61,7 +61,7 @@ export default function GoalCTAGrid() {
                 </div>
                 <Link
                   href={goal.href}
-                  className="mt-6 inline-flex items-center text-sm font-semibold text-neon-cyan hover:text-neon-violet"
+                  className="mt-6 inline-flex items-center text-sm font-semibold text-neon-blue hover:text-neon-lime"
                 >
                   {goal.cta} &rarr;
                 </Link>

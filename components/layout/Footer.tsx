@@ -21,18 +21,37 @@ const columns = [
   },
 ];
 
+// PLACEHOLDER — swap for real handles if these ever change.
+const socialLinks = [
+  { href: "https://www.linkedin.com/in/priyanka13joshi", label: "LinkedIn" },
+  { href: "https://x.com/priyankarocks", label: "X (Twitter)" },
+];
+
 export default function Footer() {
   return (
     <footer className="border-t border-white/5 bg-ink-950">
       <Container className="grid gap-12 py-16 md:grid-cols-[1.5fr_1fr_1fr_1.5fr]">
         <div>
           <p className="font-display text-lg font-semibold text-white">
-            Alex Rivera<span className="text-neon-cyan">.</span>
+            Priyanka Joshi<span className="text-neon-blue">.</span>
           </p>
           <p className="mt-3 max-w-xs text-sm text-slate-400">
-            AI marketing advisor and keynote speaker helping brands turn AI hype into
-            marketing systems that convert.
+            Fractional CMO and keynote speaker turning 20+ years of newsroom and boardroom
+            experience into AI-powered content systems.
           </p>
+          <div className="mt-5 flex gap-4">
+            {socialLinks.map((social) => (
+              <a
+                key={social.href}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-slate-400 transition-colors hover:text-neon-blue"
+              >
+                {social.label}
+              </a>
+            ))}
+          </div>
         </div>
 
         {columns.map((column) => (
@@ -56,7 +75,7 @@ export default function Footer() {
         <div>
           <p className="text-sm font-semibold text-white">Join the list</p>
           <p className="mt-4 text-sm text-slate-400">
-            One idea a week on AI marketing strategy. No spam.
+            One idea a week on AI-powered content and brand strategy. No spam.
           </p>
           <div className="mt-4">
             <NewsletterForm compact />
@@ -65,8 +84,7 @@ export default function Footer() {
       </Container>
 
       <Container className="flex flex-col gap-2 border-t border-white/5 py-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-        <p>&copy; {new Date().getFullYear()} Alex Rivera. All rights reserved.</p>
-        <p>Placeholder brand &mdash; replace with real name, socials, and legal links.</p>
+        <p>&copy; {new Date().getFullYear()} Priyanka Joshi. All rights reserved.</p>
       </Container>
     </footer>
   );

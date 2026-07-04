@@ -9,7 +9,7 @@ export default function ServiceTiers() {
       {serviceTiers.map((tier) => (
         <GlassCard
           key={tier.name}
-          className={`flex h-full flex-col ${tier.featured ? "border-neon-violet/50" : ""}`}
+          className={`flex h-full flex-col ${tier.featured ? "border-neon-lime/50" : ""}`}
         >
           <div className="flex items-center justify-between">
             <h3 className="font-display text-lg font-semibold text-white">{tier.name}</h3>
@@ -26,7 +26,7 @@ export default function ServiceTiers() {
           <ul className="mt-6 flex-1 space-y-2 text-sm text-slate-400">
             {tier.deliverables.map((item) => (
               <li key={item} className="flex gap-2">
-                <span className="text-neon-cyan">&bull;</span>
+                <span className="text-neon-blue">&bull;</span>
                 {item}
               </li>
             ))}

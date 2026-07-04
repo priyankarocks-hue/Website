@@ -5,6 +5,7 @@ import { MotionPreferenceProvider } from "@/lib/motion-preference";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SkipLink from "@/components/layout/SkipLink";
+import CustomCursor from "@/components/ui/CustomCursor";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -38,6 +39,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-ink-950 text-foreground">
         <MotionPreferenceProvider>
+          <div className="vignette-overlay" aria-hidden="true" />
+          <div className="grain-overlay" aria-hidden="true" />
+          <CustomCursor />
           <SkipLink />
           <Header />
           <main id="main-content" className="flex-1">

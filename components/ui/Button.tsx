@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useRef } from "react";
 
 type ButtonVariant = "primary" | "secondary" | "ghost";
 
@@ -23,18 +26,49 @@ export default function Button({
   className?: string;
   external?: boolean;
 }) {
+  const ref = useRef<HTMLAnchorElement>(null);
+
+  // Magnetic pull: the button nudges toward the cursor within its own
+  // bounds, then eases back via the existing transition-all on release.
+  function handleMouseMove(event: React.MouseEvent<HTMLAnchorElement>) {
+    const el = ref.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const relX = (event.clientX - rect.left - rect.width / 2) * 0.25;
+    const relY = (event.clientY - rect.top - rect.height / 2) * 0.25;
+    el.style.transform = `translate(${relX}px, ${relY}px)`;
+  }
+
+  function handleMouseLeave() {
+    if (ref.current) ref.current.style.transform = "";
+  }
+
   const classes = `inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm transition-all duration-200 ease-out ${variantClasses[variant]} ${className}`;
 
   if (external) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={classes}>
+      <a
+        ref={ref}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={classes}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+      >
         {children}
       </a>
     );
   }
 
   return (
-    <Link href={href} className={classes}>
+    <Link
+      ref={ref}
+      href={href}
+      className={classes}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
       {children}
     </Link>
   );

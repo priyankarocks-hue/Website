@@ -5,8 +5,8 @@ import GlassCard from "@/components/ui/GlassCard";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 import StatRow from "@/components/sections/StatRow";
+import MediaMarquee from "@/components/ui/MediaMarquee";
 import { bio } from "@/content/bio";
-import { mediaFeatures } from "@/content/speakingTopics";
 
 export const metadata: Metadata = {
   title: "About",
@@ -58,14 +58,7 @@ export default function AboutPage() {
       <section className="py-16">
         <Container>
           <GlassCard>
-            <p className="text-sm font-semibold uppercase tracking-widest text-neon-blue">
-              As featured in
-            </p>
-            <div className="mt-6 flex flex-wrap gap-x-10 gap-y-4 text-slate-300">
-              {mediaFeatures.map((feature) => (
-                <span key={feature}>{feature}</span>
-              ))}
-            </div>
+            <MediaMarquee />
           </GlassCard>
         </Container>
       </section>

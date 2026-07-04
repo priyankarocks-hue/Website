@@ -4,6 +4,7 @@ import Container from "@/components/ui/Container";
 import GlassCard from "@/components/ui/GlassCard";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
+import StatRow from "@/components/sections/StatRow";
 import { bio } from "@/content/bio";
 import { mediaFeatures } from "@/content/speakingTopics";
 
@@ -51,6 +52,8 @@ export default function AboutPage() {
           </div>
         </Container>
       </section>
+
+      <StatRow />
 
       <section className="py-16">
         <Container>

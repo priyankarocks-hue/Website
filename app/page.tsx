@@ -1,4 +1,5 @@
 import Hero from "@/components/sections/Hero";
+import StatRow from "@/components/sections/StatRow";
 import GoalCTAGrid from "@/components/sections/GoalCTAGrid";
 import PageTeasers from "@/components/sections/PageTeasers";
 import AIToolsStack from "@/components/sections/AIToolsStack";
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <StatRow />
       <PageTeasers />
       <AIToolsStack />
       <GoalCTAGrid />

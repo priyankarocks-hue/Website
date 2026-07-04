@@ -4,58 +4,34 @@
 export const aiStack = [
   {
     stage: "Signal & Ideation",
-    description: "Finding what's worth making before a single brief exists.",
+    description: "Finding what's worth making before a brief exists.",
     tools: [
-      {
-        name: "MCP-routed social listening",
-        use: "Hootsuite, Trustpilot, social DMs, and chatbot logs feed content and campaign priorities from real signal, not guesses",
-      },
-      {
-        name: "Attribution modelling",
-        use: "Reallocates budget toward what's actually converting before the next brief is written",
-      },
+      { name: "MCP-routed social listening", use: "Reviews and chatbot logs become content priorities" },
+      { name: "Attribution modelling", use: "Budget follows what's actually converting" },
     ],
   },
   {
     stage: "AI-Augmented Production",
-    description: "Producing at scale without producing generic output.",
+    description: "Scale without going generic.",
     tools: [
-      {
-        name: "AI localization pipeline",
-        use: "Human-in-the-loop QA and brand glossaries across 15+ markets — doubled output, halved timelines, zero added headcount",
-      },
-      {
-        name: "AI workflow design with engineers",
-        use: "Built directly with AI engineers, not bolted on after the fact — automation designed around the funnel, not a prompt library",
-      },
+      { name: "AI localization pipeline", use: "Human-in-the-loop QA across 15+ markets" },
+      { name: "AI workflow design", use: "Built with engineers, not bolted on after" },
     ],
   },
   {
     stage: "Distribution",
-    description: "Getting it in front of people, and machines, that matter.",
+    description: "In front of people, and machines, that matter.",
     tools: [
-      {
-        name: "SEO/GEO architecture",
-        use: "Schema markup, pillar pages, and intent-driven clusters engineered for visibility in AI Overviews and generative snippets",
-      },
-      {
-        name: "Programmatic & paid social",
-        use: "Scaled across 15+ markets on disciplined unit economics, not blind spend",
-      },
+      { name: "SEO/GEO architecture", use: "Built for visibility in AI Overviews" },
+      { name: "Programmatic & paid social", use: "Scaled on disciplined unit economics" },
     ],
   },
   {
     stage: "Attribution & Reporting",
-    description: "Proving what worked — in numbers a CFO will believe.",
+    description: "Numbers a CFO will believe.",
     tools: [
-      {
-        name: "HubSpot",
-        use: "Marketing automation and CRM running a $1M+/month budget across paid, organic, and partner channels",
-      },
-      {
-        name: "Funnel & ROAS analytics",
-        use: "The dashboards that turned a 300% uplift in DOAS from a claim into a number leadership signed off on",
-      },
+      { name: "HubSpot", use: "Runs the $1M+/month budget end to end" },
+      { name: "Funnel & ROAS analytics", use: "Turned 300% DOAS from claim to fact" },
     ],
   },
 ];

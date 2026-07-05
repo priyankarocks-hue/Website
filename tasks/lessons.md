@@ -1,0 +1,28 @@
+# Lessons
+
+Patterns learned from corrections during this project. Review at the start of a
+session; add a new entry any time the user corrects a mistake.
+
+- **Vercel Root Directory must be the repo root (`./`).** A misconfigured Root
+  Directory (pointed at a subfolder) causes a silent 404 at the Middleware/routing
+  layer with no build error — the deployment "succeeds" but serves nothing. Check
+  this first on any fresh Vercel 404.
+- **This sandbox's outbound proxy blocks `*.vercel.app` and `api.vercel.com`
+  entirely.** No Vercel CLI/API access is possible from inside this environment —
+  deployment debugging has to go through the user's own dashboard screenshots/logs,
+  not direct HTTP checks from here.
+- **Full-page Playwright screenshots don't reliably trigger Framer Motion
+  `whileInView` animations.** A fullPage capture resizes the viewport rather than
+  scrolling it, so IntersectionObserver-gated content can appear missing in the
+  screenshot even though it renders fine for real users. Verify with an
+  incremental `window.scrollTo` loop before treating an empty-looking section as
+  a bug.
+- **Next.js dev server / Turbopack HMR can serve stale CSS after a large
+  Tailwind token rename.** If a browser check looks broken immediately after a
+  big CSS/theme-token change, rebuild and check against `next build && next
+  start` (production) before concluding it's a real bug — the dev server's
+  incremental compile isn't always trustworthy for that kind of change.
+- **Don't lead marketing copy with tenure framing** ("20+ years", "veteran") for
+  a startup/SaaS buyer audience — lead with specific, current proof (recent real
+  numbers, named systems, concrete wins) instead. Tenure reads as "safe/legacy,"
+  not "cutting edge."

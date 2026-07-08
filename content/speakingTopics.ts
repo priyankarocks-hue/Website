@@ -1,5 +1,5 @@
 // Topics grounded in Priyanka's real work — building AI-augmented growth
-// systems at Deriv across 15+ regulated markets. Update as her talks evolve.
+// systems across 15+ regulated markets. Update as her talks evolve.
 
 export const speakingTopics = [
   {

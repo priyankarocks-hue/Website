@@ -1,5 +1,5 @@
-// Real numbers from Deriv. Keep this list short — these are meant to be
-// scanned in seconds, not read as a paragraph.
+// Real numbers from Priyanka's current role. Keep this list short — these
+// are meant to be scanned in seconds, not read as a paragraph.
 
 export const stats = [
   { value: "4M+", label: "Qualified acquisitions per year" },

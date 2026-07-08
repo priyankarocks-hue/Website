@@ -28,7 +28,7 @@ export const serviceTiers: ServiceTier[] = [
     name: "Fractional CMO",
     price: "$9,500",
     cadence: "per month",
-    description: "The same AI-augmented growth system running $1M+/month, built for your team.",
+    description: "The same growth system, built for your team.",
     deliverables: [
       "Weekly working session with your team",
       "AI-augmented growth systems built with your engineers",

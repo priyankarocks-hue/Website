@@ -20,7 +20,7 @@ export default function ContactPage() {
           <SectionHeading
             eyebrow="Contact"
             title="Let's talk"
-            description="Whether it's an advisory engagement, a speaking inquiry, or a question about the course — start here."
+            description="Advisory, speaking, or a course question — start here."
           />
         </Container>
       </section>

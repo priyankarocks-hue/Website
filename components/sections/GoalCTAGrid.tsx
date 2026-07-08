@@ -5,43 +5,44 @@ import Link from "next/link";
 import Container from "@/components/ui/Container";
 import GlassCard from "@/components/ui/GlassCard";
 import SectionHeading from "@/components/ui/SectionHeading";
+import GoalIcon from "@/components/ui/GoalIcon";
 
 const goals = [
   {
     title: "Book an Advisory Call",
-    description: "Get a straight answer on where AI helps your marketing funnel and where it doesn't.",
+    description: "Where AI helps your funnel — and where it doesn't.",
     href: "/advisory",
-    cta: "Explore advisory services",
+    cta: "Explore advisory",
+    icon: "call",
   },
   {
     title: "Book Me to Speak",
-    description: "A keynote or workshop that leaves your audience with an actual plan, not just hype.",
+    description: "A talk that leaves a plan, not just hype.",
     href: "/speaking",
-    cta: "See speaking topics",
+    cta: "See topics",
+    icon: "mic",
   },
   {
     title: "Join the List",
-    description: "One idea a week on AI marketing strategy — no fluff, no spam.",
+    description: "One idea a week. No fluff.",
     href: "/insights",
     cta: "Read the latest",
+    icon: "pen",
   },
   {
     title: "Take the Course",
-    description: "A self-paced system for building an AI-augmented marketing function.",
+    description: "A self-paced AI growth system.",
     href: "/products",
-    cta: "See the curriculum",
+    cta: "See curriculum",
+    icon: "play",
   },
-];
+] as const;
 
 export default function GoalCTAGrid() {
   return (
     <section className="relative py-24">
       <Container>
-        <SectionHeading
-          eyebrow="Ways to work together"
-          title="Whatever brought you here, there's a next step"
-          align="center"
-        />
+        <SectionHeading eyebrow="Ways to work together" title="Pick your next step" align="center" />
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {goals.map((goal, index) => (
@@ -54,10 +55,11 @@ export default function GoalCTAGrid() {
             >
               <GlassCard className="flex h-full flex-col justify-between">
                 <div>
-                  <h3 className="font-display text-lg font-semibold text-white">
+                  <GoalIcon variant={goal.icon} />
+                  <h3 className="mt-4 font-display text-lg font-semibold text-white">
                     {goal.title}
                   </h3>
-                  <p className="mt-3 text-sm text-slate-300">{goal.description}</p>
+                  <p className="mt-2 text-sm text-slate-300">{goal.description}</p>
                 </div>
                 <Link
                   href={goal.href}

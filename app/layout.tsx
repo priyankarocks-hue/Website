@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter } from "next/font/google";
+import { Bricolage_Grotesque, Inter } from "next/font/google";
 import "./globals.css";
 import { MotionPreferenceProvider } from "@/lib/motion-preference";
 import Header from "@/components/layout/Header";
@@ -7,10 +7,10 @@ import Footer from "@/components/layout/Footer";
 import SkipLink from "@/components/layout/SkipLink";
 import CustomCursor from "@/components/ui/CustomCursor";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["500", "600", "700", "800"],
 });
 
 const inter = Inter({
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Priyanka Joshi",
   },
   description:
-    "Priyanka Joshi builds AI content and comms systems for startups and SaaS teams who refuse to sound like a template, and speaks on brand, content, and AI.",
+    "Priyanka Joshi builds signal-driven AI growth systems for startups and SaaS teams, and speaks on brand, content, and AI.",
 };
 
 export default function RootLayout({
@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${inter.variable} h-full antialiased`}
+      className={`${bricolage.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-ink-950 text-foreground">
         <MotionPreferenceProvider>

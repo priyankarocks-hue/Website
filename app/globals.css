@@ -5,7 +5,7 @@
   --background: #05060a;
   --background-alt: #0b0d14;
   --foreground: #f8fafc;
-  --font-display: var(--font-space-grotesk);
+  --font-display: var(--font-bricolage);
   --font-body: var(--font-inter);
 }
 
@@ -55,8 +55,8 @@ body {
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 1.25rem;
@@ -102,8 +102,8 @@ body {
   pointer-events: none;
   background: radial-gradient(
     ellipse at center,
-    transparent 55%,
-    rgba(0, 0, 0, 0.55) 100%
+    transparent 60%,
+    rgba(0, 0, 0, 0.32) 100%
   );
 }
 

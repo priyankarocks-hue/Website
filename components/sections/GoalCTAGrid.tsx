@@ -30,10 +30,10 @@ const goals = [
     icon: "pen",
   },
   {
-    title: "Take the Course",
-    description: "A self-paced AI growth system.",
+    title: "Take a Course",
+    description: "Self-paced. Foundations or the full system.",
     href: "/products",
-    cta: "See curriculum",
+    cta: "Compare courses",
     icon: "play",
   },
 ] as const;

@@ -66,9 +66,8 @@ export default function ProductsPage() {
             </GlassCard>
           ))}
         </Container>
-        <Container className="mt-8 text-center">
-          <p className="text-sm text-slate-300">{coursesPitch.guarantee}</p>
-          <p className="mt-3 text-xs text-slate-400">
+        <Container className="mt-8">
+          <p className="text-xs text-slate-400">
             Placeholder checkout links — connect your real Stripe Payment Links before launch.
           </p>
         </Container>

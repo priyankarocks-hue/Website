@@ -57,6 +57,4 @@ export const courses: Course[] = [
 export const coursesPitch = {
   differentiator:
     "Most AI marketing courses teach prompts. These teach the judgment calls a prompt can't make — drawn from a live system, not a slide deck.",
-  guarantee:
-    "30-day guarantee: ship nothing with it, pay nothing for it. Full refund, no questions.",
 };

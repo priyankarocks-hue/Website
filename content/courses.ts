@@ -1,6 +1,6 @@
-// PLACEHOLDER PRICING — connect real Stripe Payment Links before launch.
-// "Dispatches" instead of "modules" is intentional: each lesson is a field
-// note from a real campaign decision, not a generic tutorial.
+// PLACEHOLDER PRICING + guarantee terms — confirm before launch, and connect
+// real Stripe Payment Links. "Dispatches" is intentional: each lesson is a
+// field note from a real campaign decision, not a generic tutorial.
 
 type Course = {
   name: string;
@@ -15,39 +15,48 @@ type Course = {
   featured?: boolean;
 };
 
+// Every dispatch is phrased as what the buyer can DO afterward — not what
+// the lesson "covers." Feature lists don't sell; capabilities do.
 export const courses: Course[] = [
   {
     name: "Signal to Growth — Foundations",
-    tagline: "For founders and marketers picking up AI for the first time.",
+    tagline: "Your first AI marketing system, running in a week.",
     price: "$197",
     priceNote: "one-time, lifetime access",
     audience: "Best for solo marketers, early-stage founders, first AI hire",
     dispatches: [
-      "Dispatch 01: Reading the signal — reviews and DMs into your first brief",
-      "Dispatch 02: One voice, wherever you publish",
-      "Dispatch 03: Getting found by the answer, not just the click",
-      "Dispatch 04: The $0 attribution habit",
-      "Bonus: Templates for all four, ready this week",
+      "Turn your reviews and DMs into a data-backed content brief",
+      "Publish in one voice everywhere — even the posts AI drafted",
+      "Show up in AI answers, not just page-two results",
+      "Prove what worked with a $0 attribution habit",
+      "Ship it all this week with ready-to-use templates",
     ],
-    outcome: "The four frameworks running on your own funnel, not just in your notes.",
+    outcome: "Walk away running all four frameworks on your own funnel — not just understanding them.",
     stripeLink: "https://buy.stripe.com/test_placeholder_foundations",
   },
   {
     name: "Signal to Growth — Operator System",
-    tagline: "For teams already running marketing who want the full system.",
+    tagline: "The full build, from a system doing 4M+ acquisitions a year.",
     price: "$897",
     priceNote: "one-time, lifetime access",
     audience: "Best for in-house teams, agencies, fractional operators",
     dispatches: [
-      "Dispatch 01: Building your signal pipeline",
-      "Dispatch 02: AI localization at scale, without more headcount",
-      "Dispatch 03: GEO — rebuilding your SEO for AI Overviews",
-      "Dispatch 04: Attribution modelling that shows real ROAS",
-      "Bonus: Live monthly Q&A with Priyanka for the first cohort",
+      "Build a signal pipeline your team actually acts on",
+      "Double content output across markets without new headcount",
+      "Rebuild your SEO for AI Overviews before your competitors do",
+      "Walk into the budget meeting with ROAS, not vibes",
+      "Bonus: live monthly Q&A with Priyanka for the first cohort",
     ],
-    outcome: "Built from a system running 4M+ acquisitions a year.",
+    outcome: "Walk away with the operating system — pipeline, playbooks, and the metrics to defend it.",
     stripeLink: "https://buy.stripe.com/test_placeholder_operator",
     badge: "Cohort opens quarterly",
     featured: true,
   },
 ];
+
+export const coursesPitch = {
+  differentiator:
+    "Most AI marketing courses teach prompts. These teach the judgment calls a prompt can't make — drawn from a live system, not a slide deck.",
+  guarantee:
+    "30-day guarantee: ship nothing with it, pay nothing for it. Full refund, no questions.",
+};

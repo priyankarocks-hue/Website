@@ -4,7 +4,7 @@ import GlassCard from "@/components/ui/GlassCard";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Badge from "@/components/ui/Badge";
 import StripeCheckoutButton from "@/components/embeds/StripeCheckoutButton";
-import { courses } from "@/content/courses";
+import { courses, coursesPitch } from "@/content/courses";
 
 export const metadata: Metadata = {
   title: "Courses",
@@ -22,7 +22,7 @@ export default function ProductsPage() {
           <SectionHeading
             eyebrow="Courses"
             title="Signal to Growth"
-            description="Two ways in: foundations for teams starting with AI, the full system for teams scaling it."
+            description={coursesPitch.differentiator}
             align="center"
           />
         </Container>
@@ -66,8 +66,9 @@ export default function ProductsPage() {
             </GlassCard>
           ))}
         </Container>
-        <Container>
-          <p className="mt-6 text-xs text-slate-400">
+        <Container className="mt-8 text-center">
+          <p className="text-sm text-slate-300">{coursesPitch.guarantee}</p>
+          <p className="mt-3 text-xs text-slate-400">
             Placeholder checkout links — connect your real Stripe Payment Links before launch.
           </p>
         </Container>

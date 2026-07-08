@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import BackgroundLayer from "@/components/three/BackgroundLayer";
 import Container from "@/components/ui/Container";
 import GlassCard from "@/components/ui/GlassCard";
@@ -21,8 +22,14 @@ export default function AboutPage() {
       <section className="py-20">
         <Container className="grid gap-12 md:grid-cols-[1fr_1.4fr] md:items-start">
           <div className="glass-card p-2">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={bio.headshot} alt={`${bio.name} headshot placeholder`} className="w-full rounded-2xl" />
+            <Image
+              src={bio.headshot}
+              alt={`${bio.name}, Fractional CMO and AI marketing advisor`}
+              width={880}
+              height={1168}
+              priority
+              className="w-full rounded-2xl object-cover"
+            />
           </div>
 
           <div>

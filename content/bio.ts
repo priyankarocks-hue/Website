@@ -1,10 +1,9 @@
 // Real background, generalized from Priyanka's resume (no employer names).
-// Swap public/images/headshot-placeholder.svg for a real photo before launch.
 
 export const bio = {
   name: "Priyanka Joshi",
   title: "Fractional CMO & AI Marketing Advisor",
-  headshot: "/images/headshot-placeholder.svg",
+  headshot: "/images/headshot.jpg",
   shortBlurb:
     "I build AI growth systems for teams who refuse to sound like a template.",
   paragraphs: [

@@ -37,7 +37,7 @@ export default function SpeakingPage() {
               className="w-full rounded-2xl"
             />
           </div>
-          <p className="mt-3 text-xs text-slate-500">
+          <p className="mt-3 text-xs text-slate-400">
             Placeholder reel — embed your real speaker video here before launch.
           </p>
         </Container>

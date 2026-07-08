@@ -29,7 +29,7 @@ functional in development, but needs real values before going live:
 
 | What | Where | Replace with |
 |---|---|---|
-| Name, bio, headshot | `content/bio.ts`, `public/images/headshot-placeholder.svg` | Your real name, bio copy, and photo |
+| Bio copy | `content/bio.ts` | Adjust as positioning evolves (headshot: `public/images/headshot.jpg`) |
 | Speaking topics, past engagements | `content/speakingTopics.ts` | Your real talks and event history |
 | Speaker reel | `public/video/reel-poster-placeholder.svg`, `app/speaking/page.tsx` | Embed your real reel |
 | Advisory service tiers | `content/serviceTiers.ts` | Your real offers/pricing |

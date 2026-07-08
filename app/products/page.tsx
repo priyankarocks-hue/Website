@@ -47,7 +47,7 @@ export default function ProductsPage() {
                 {course.price}
                 <span className="ml-2 text-sm font-normal text-slate-400">{course.priceNote}</span>
               </p>
-              <p className="mt-1 text-xs text-slate-500">{course.audience}</p>
+              <p className="mt-1 text-xs text-slate-400">{course.audience}</p>
 
               <ul className="mt-6 flex-1 space-y-3 text-sm text-slate-200">
                 {course.dispatches.map((item) => (
@@ -67,7 +67,7 @@ export default function ProductsPage() {
           ))}
         </Container>
         <Container>
-          <p className="mt-6 text-xs text-slate-500">
+          <p className="mt-6 text-xs text-slate-400">
             Placeholder checkout links — connect your real Stripe Payment Links before launch.
           </p>
         </Container>

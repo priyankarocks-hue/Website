@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
       </Container>
 
-      <Container className="flex flex-col gap-2 border-t border-white/5 py-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+      <Container className="flex flex-col gap-2 border-t border-white/5 py-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
         <p>&copy; {new Date().getFullYear()} Priyanka Joshi. All rights reserved.</p>
       </Container>
     </footer>

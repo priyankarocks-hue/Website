@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import { bio } from "@/content/bio";
@@ -34,12 +35,12 @@ export default function PageTeasers() {
           transition={{ duration: 0.5 }}
           className="glass-card p-2"
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={bio.headshot}
-            alt=""
-            aria-hidden="true"
-            className="w-full rounded-2xl"
+            alt={`${bio.name}, Fractional CMO and AI marketing advisor`}
+            width={880}
+            height={1168}
+            className="w-full rounded-2xl object-cover"
           />
         </motion.div>
       </Container>

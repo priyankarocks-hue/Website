@@ -7,7 +7,7 @@ export default function MediaMarquee() {
 
   return (
     <div className="overflow-hidden">
-      <p className="mb-4 text-xs uppercase tracking-widest text-slate-500">As featured in</p>
+      <p className="mb-4 text-xs uppercase tracking-widest text-slate-400">As featured in</p>
       <div className="marquee-track flex w-max items-center gap-16">
         {items.map((feature, index) => (
           // eslint-disable-next-line @next/next/no-img-element

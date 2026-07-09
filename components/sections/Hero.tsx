@@ -50,7 +50,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="text-sm font-semibold uppercase tracking-widest text-neon-blue"
         >
-          Fractional CMO &amp; AI Marketing Advisor
+          Fractional CMO
         </motion.p>
 
         <h1 className="mt-6 max-w-3xl font-display text-4xl font-semibold leading-tight text-white sm:text-6xl">
@@ -64,8 +64,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.9 }}
           className="mt-6 max-w-2xl text-lg text-slate-300"
         >
-          I built the AI-powered growth engine behind a regulated FX platform. Now I build
-          that system for you.
+          15+ regulated markets. 4M+ customers a year. One newsroom rule behind all of it:
+          if it isn&apos;t worth reading, it doesn&apos;t ship. I build growth systems with
+          that discipline built in.
         </motion.p>
 
         <motion.div

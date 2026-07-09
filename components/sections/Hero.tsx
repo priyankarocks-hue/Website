@@ -50,7 +50,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="text-sm font-semibold uppercase tracking-widest text-neon-blue"
         >
-          Fractional CMO for SaaS &amp; Startups
+          Fractional CMO &amp; AI Marketing Advisor
         </motion.p>
 
         <h1 className="mt-6 max-w-3xl font-display text-4xl font-semibold leading-tight text-white sm:text-6xl">

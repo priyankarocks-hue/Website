@@ -20,7 +20,7 @@ const inter = Inter({
 });
 
 const description =
-  "Priyanka Joshi builds signal-driven AI growth systems for startups and SaaS teams, and speaks on brand, content, and AI.";
+  "Priyanka Joshi builds signal-driven AI growth systems for brands of every size, and speaks on brand, content, and AI.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

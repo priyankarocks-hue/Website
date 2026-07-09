@@ -3,7 +3,7 @@
 
 export const frameworks = [
   {
-    name: "Signal to Growth",
+    name: "Signal, Not Vibes",
     description: "Reviews and chat logs become content decisions, not a hunch.",
     icon: "signal",
   },

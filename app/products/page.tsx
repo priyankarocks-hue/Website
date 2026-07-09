@@ -8,7 +8,8 @@ import { courses, coursesPitch } from "@/content/courses";
 
 export const metadata: Metadata = {
   title: "Courses",
-  description: "Two ways in: foundations for teams starting with AI, the full system for teams scaling it.",
+  description:
+    "Hard to Skip for teams starting with AI. Kill the Template for teams scaling it.",
 };
 
 // Intentionally lighter visual treatment than Home/Speaking/Advisory —
@@ -21,7 +22,7 @@ export default function ProductsPage() {
         <Container className="max-w-3xl text-center">
           <SectionHeading
             eyebrow="Courses"
-            title="Signal to Growth"
+            title="Pick your fight"
             description={coursesPitch.differentiator}
             align="center"
           />

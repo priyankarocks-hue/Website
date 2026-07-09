@@ -8,8 +8,8 @@ import NewsletterForm from "@/components/embeds/NewsletterForm";
 import { getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
-  title: "Insights",
-  description: "Ideas on AI marketing strategy — one at a time, no fluff.",
+  title: "Nobody Read It",
+  description: "The newsletter about AI content nobody reads — and how to make yours the exception.",
 };
 
 export default function InsightsPage() {
@@ -23,8 +23,8 @@ export default function InsightsPage() {
         <Container>
           <SectionHeading
             eyebrow="Insights"
-            title="Ideas on AI marketing strategy"
-            description="This is a young library — one article to start. New pieces land here as they're written."
+            title="Nobody Read It"
+            description="The newsletter about AI content nobody reads — and how to make yours the exception."
           />
         </Container>
       </section>
@@ -49,10 +49,10 @@ export default function InsightsPage() {
         <Container>
           <GlassCard className="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
             <div>
-              <p className="font-display text-lg font-semibold text-white">Join the list</p>
-              <p className="mt-1 text-sm text-slate-300">
-                One idea a week on AI marketing strategy. No spam.
+              <p className="font-display text-lg font-semibold text-white">
+                Get Nobody Read It weekly
               </p>
+              <p className="mt-1 text-sm text-slate-300">One idea a week. No spam.</p>
             </div>
             <NewsletterForm />
           </GlassCard>

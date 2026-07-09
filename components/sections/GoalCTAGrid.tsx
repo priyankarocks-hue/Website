@@ -23,15 +23,15 @@ const goals = [
     icon: "mic",
   },
   {
-    title: "Join the List",
-    description: "One idea a week. No fluff.",
+    title: "Nobody Read It",
+    description: "The weekly. One idea, no spam.",
     href: "/insights",
     cta: "Read the latest",
     icon: "pen",
   },
   {
     title: "Take a Course",
-    description: "Self-paced. Foundations or the full system.",
+    description: "Hard to Skip, or Kill the Template.",
     href: "/products",
     cta: "Compare courses",
     icon: "play",

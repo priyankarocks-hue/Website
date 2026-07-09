@@ -1,6 +1,6 @@
-// PLACEHOLDER PRICING + guarantee terms — confirm before launch, and connect
-// real Stripe Payment Links. "Dispatches" is intentional: each lesson is a
-// field note from a real campaign decision, not a generic tutorial.
+// PLACEHOLDER PRICING — confirm before launch, and connect real Stripe
+// Payment Links. "Dispatches" is intentional: each lesson is a field note
+// from a real campaign decision, not a generic tutorial.
 
 type Course = {
   name: string;
@@ -19,8 +19,8 @@ type Course = {
 // the lesson "covers." Feature lists don't sell; capabilities do.
 export const courses: Course[] = [
   {
-    name: "Signal to Growth — Foundations",
-    tagline: "Your first AI marketing system, running in a week.",
+    name: "Hard to Skip",
+    tagline: "The starter system. Content people stop scrolling for, live in a week.",
     price: "$197",
     priceNote: "one-time, lifetime access",
     audience: "Best for solo marketers, early-stage founders, first AI hire",
@@ -32,11 +32,11 @@ export const courses: Course[] = [
       "Ship it all this week with ready-to-use templates",
     ],
     outcome: "Walk away running all four frameworks on your own funnel — not just understanding them.",
-    stripeLink: "https://buy.stripe.com/test_placeholder_foundations",
+    stripeLink: "https://buy.stripe.com/test_placeholder_hardtoskip",
   },
   {
-    name: "Signal to Growth — Operator System",
-    tagline: "The full build, from a system doing 4M+ acquisitions a year.",
+    name: "Kill the Template",
+    tagline: "The full operator build, from a system doing 4M+ acquisitions a year.",
     price: "$897",
     priceNote: "one-time, lifetime access",
     audience: "Best for in-house teams, agencies, fractional operators",
@@ -48,7 +48,7 @@ export const courses: Course[] = [
       "Bonus: live monthly Q&A with Priyanka for the first cohort",
     ],
     outcome: "Walk away with the operating system — pipeline, playbooks, and the metrics to defend it.",
-    stripeLink: "https://buy.stripe.com/test_placeholder_operator",
+    stripeLink: "https://buy.stripe.com/test_placeholder_killthetemplate",
     badge: "Cohort opens quarterly",
     featured: true,
   },

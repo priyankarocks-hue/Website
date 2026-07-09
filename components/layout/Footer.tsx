@@ -73,9 +73,9 @@ export default function Footer() {
         ))}
 
         <div>
-          <p className="text-sm font-semibold text-white">Join the list</p>
+          <p className="text-sm font-semibold text-white">Nobody Read It</p>
           <p className="mt-4 text-sm text-slate-400">
-            One idea a week on AI-powered content and brand strategy. No spam.
+            The weekly on AI content nobody reads — and how to make yours the exception.
           </p>
           <div className="mt-4">
             <NewsletterForm compact />

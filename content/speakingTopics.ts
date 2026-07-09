@@ -1,9 +1,11 @@
-// Topics grounded in Priyanka's real work — building AI-augmented growth
-// systems across 15+ regulated markets. Update as her talks evolve.
+// Topics grounded in Priyanka's real work building AI-augmented growth
+// systems in regulated, multi-market environments. Update as talks evolve.
+// NOTE: no employer-specific metrics — the economics argument carries the
+// proof instead.
 
 export const speakingTopics = [
   {
-    title: "The MCP Pipeline Behind a $1M/Month Growth Engine",
+    title: "The MCP Pipeline: Chat Logs In, Campaigns Out",
     description:
       "How a social-listening system gets routed through MCP into real content and campaign priorities. Not vibes. Signal.",
     outcomes: [
@@ -14,7 +16,7 @@ export const speakingTopics = [
   {
     title: "AI Localization at Scale: Doubling Output Without Doubling Headcount",
     description:
-      "The human-in-the-loop system that shipped content across 15+ markets faster, without the brand voice collapsing into generic output.",
+      "The human-in-the-loop system that ships multi-market content faster, without the brand voice collapsing into generic output.",
     outcomes: [
       "The QA layer that keeps localized content from sounding translated",
       "How brand glossaries stop 15 markets sounding like 15 companies",

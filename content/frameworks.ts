@@ -9,7 +9,7 @@ export const frameworks = [
   },
   {
     name: "One Voice, Every Market",
-    description: "AI localization, human QA — one brand voice across 15+ markets.",
+    description: "AI localization, human QA — one brand voice in every market you're in.",
     icon: "voice",
   },
   {

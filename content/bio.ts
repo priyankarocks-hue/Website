@@ -11,11 +11,11 @@ export const bio = {
     "Journalist first, operator second. That order is the whole point.",
   paragraphs: [
     "I started on a newsroom deadline, learning to spot the story worth telling — and kill the ones that weren't. Then I spent years applying that filter to marketing: a comms team built from zero to $80M+ in first-year revenue, coverage in Bloomberg, CNBC, and Discovery.",
-    "Today that editor's eye runs a growth operation across 15+ regulated markets: a signal pipeline turning reviews and chat logs into content decisions, one brand voice everywhere, budget following what converts. AI does the heavy lifting. Judgment decides what's worth lifting.",
+    "Today that editor's eye runs multi-market growth operations in regulated industries: a signal pipeline turning reviews and chat logs into content decisions, one brand voice everywhere, budget following what converts. AI does the heavy lifting. Judgment decides what's worth lifting.",
   ],
   credentials: [
-    "Built an AI growth engine for a live FX platform",
-    "AI localization system with human-in-the-loop QA",
+    "Builds AI growth systems inside regulated industries",
+    "AI localization with human-in-the-loop QA",
     "GEO/SEO architecture built for the AI-search era",
   ],
 };

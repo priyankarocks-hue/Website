@@ -26,3 +26,9 @@ session; add a new entry any time the user corrects a mistake.
   a startup/SaaS buyer audience — lead with specific, current proof (recent real
   numbers, named systems, concrete wins) instead. Tenure reads as "safe/legacy,"
   not "cutting edge."
+- **Never publish current-employer performance metrics, even anonymized.**
+  Numbers like "4M+ acquisitions, 300% DOAS, $1M+/month across 15+ markets" are
+  confidential and trivially traceable to the employer via LinkedIn even with
+  the name removed. Same for identifying descriptors ("live FX platform").
+  Substitute an economics argument the person can own outright (tool cost vs.
+  system leverage) — it sells capability without disclosing anyone's data.

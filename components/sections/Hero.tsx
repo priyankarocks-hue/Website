@@ -64,9 +64,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.9 }}
           className="mt-6 max-w-2xl text-lg text-slate-300"
         >
-          15+ regulated markets. 4M+ customers a year. One newsroom rule behind all of it:
-          if it isn&apos;t worth reading, it doesn&apos;t ship. I build growth systems with
-          that discipline built in.
+          A premium AI stack costs about $1K a month. With the right system around it,
+          that&apos;s the output of a content team. Without one, it&apos;s just
+          subscriptions. I build the system — and the judgment that runs it.
         </motion.p>
 
         <motion.div

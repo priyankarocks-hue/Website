@@ -39,7 +39,7 @@ export default function AdvisoryPage() {
           <SectionHeading
             eyebrow="Advisory"
             title="Fractional CMO leadership for teams who want a plan, not a demo"
-            description="The same growth system, applied to your stack. No vendor kickbacks."
+            description="A growth system built around your stack and your numbers. No vendor kickbacks."
           />
         </Container>
       </section>

@@ -36,7 +36,7 @@ export const courses: Course[] = [
   },
   {
     name: "Kill the Template",
-    tagline: "The full operator build, from a system doing 4M+ acquisitions a year.",
+    tagline: "The full operator build — pipeline, playbooks, and the numbers to defend them.",
     price: "$897",
     priceNote: "one-time, lifetime access",
     audience: "Best for in-house teams, agencies, fractional operators",

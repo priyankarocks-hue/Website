@@ -32,3 +32,10 @@ session; add a new entry any time the user corrects a mistake.
   the name removed. Same for identifying descriptors ("live FX platform").
   Substitute an economics argument the person can own outright (tool cost vs.
   system leverage) — it sells capability without disclosing anyone's data.
+- **Positioning: consultant/orchestrator, never engineer.** Priyanka does not
+  personally build technical systems — she designs them, brings AI engineers
+  (or works with the client's), and supplies the judgment that runs them.
+  Never write "I build the pipeline/system" as a hands-on-keyboard claim.
+  Courses and insights are for NON-TECHNICAL marketers: every promise must be
+  doable without code ("you write the brief, not the code"), progressively
+  pushing what a marketer can do with AI.

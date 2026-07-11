@@ -14,7 +14,7 @@ export const bio = {
     "Today that editor's eye runs multi-market growth operations in regulated industries: a signal pipeline turning reviews and chat logs into content decisions, one brand voice everywhere, budget following what converts. AI does the heavy lifting. Judgment decides what's worth lifting.",
   ],
   credentials: [
-    "Builds AI growth systems inside regulated industries",
+    "Designs AI growth systems — and brings the engineers who build them",
     "AI localization with human-in-the-loop QA",
     "GEO/SEO architecture built for the AI-search era",
   ],

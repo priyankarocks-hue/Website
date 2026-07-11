@@ -41,7 +41,7 @@ export const courses: Course[] = [
     priceNote: "one-time, lifetime access",
     audience: "Best for in-house teams, agencies, fractional operators",
     dispatches: [
-      "Build a signal pipeline your team actually acts on",
+      "Spec a signal pipeline your engineers can build in a sprint — you write the brief, not the code",
       "Double content output across markets without new headcount",
       "Rebuild your SEO for AI Overviews before your competitors do",
       "Walk into the budget meeting with ROAS, not vibes",
@@ -56,5 +56,5 @@ export const courses: Course[] = [
 
 export const coursesPitch = {
   differentiator:
-    "Most AI marketing courses teach prompts. These teach the judgment calls a prompt can't make — drawn from a live system, not a slide deck.",
+    "Most AI marketing courses teach prompts. These teach the judgment calls a prompt can't make — no code, built for marketers, not engineers.",
 };

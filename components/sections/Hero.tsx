@@ -66,7 +66,8 @@ export default function Hero() {
         >
           A premium AI stack costs about $1K a month. With the right system around it,
           that&apos;s the output of a content team. Without one, it&apos;s just
-          subscriptions. I build the system — and the judgment that runs it.
+          subscriptions. I design the system, bring the engineers who build it, and
+          supply the judgment that runs it.
         </motion.p>
 
         <motion.div

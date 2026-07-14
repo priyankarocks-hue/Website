@@ -4,7 +4,7 @@
 // Your Calendly event URL, e.g. "https://calendly.com/priyanka-joshi/intro-call".
 // Leave empty ("") until the Calendly account exists; pages show a
 // contact fallback instead of a broken widget.
-export const CALENDLY_URL = "";
+export const CALENDLY_URL = "https://calendly.com/priyankarocks/30min";
 
 // Your Stripe Payment Link, e.g. "https://buy.stripe.com/xxxx".
 // Leave empty ("") until the link exists; the course page routes

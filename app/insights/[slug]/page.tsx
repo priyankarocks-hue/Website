@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Container from "@/components/ui/Container";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { getAllPosts, getPostSource } from "@/lib/posts";
 
 export function generateStaticParams() {
@@ -30,7 +31,12 @@ export default async function InsightPostPage({
 
   return (
     <div className="relative">
-      <article className="py-20">
+      <section className="pt-8">
+        <Container className="max-w-3xl">
+          <Breadcrumbs items={[{ label: "Insights", href: "/insights" }, { label: post.meta.title }]} />
+        </Container>
+      </section>
+      <article className="pb-20 pt-10">
         <Container className="max-w-3xl">
           <p className="text-xs text-sub">{post.meta.date}</p>
           <h1 className="mt-3 font-display text-3xl font-bold text-ink sm:text-4xl">

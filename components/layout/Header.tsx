@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
@@ -15,6 +16,7 @@ const navLinks = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 border-b border-hair bg-paper/95 backdrop-blur-sm">
@@ -28,7 +30,12 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-sub transition-colors hover:text-ink"
+              aria-current={pathname.startsWith(link.href) ? "page" : undefined}
+              className={`text-sm transition-colors hover:text-ink ${
+                pathname.startsWith(link.href)
+                  ? "text-ink underline decoration-red-pen decoration-2 underline-offset-8"
+                  : "text-sub"
+              }`}
             >
               {link.label}
             </Link>

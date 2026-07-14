@@ -1,18 +1,24 @@
 import type { Metadata } from "next";
 import Container from "@/components/ui/Container";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Button from "@/components/ui/Button";
 import { bio } from "@/content/bio";
 import { mediaFeatures } from "@/content/speakingTopics";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About Priyanka Joshi, Fractional CMO & AI Marketing Advisor",
   description: bio.shortBlurb,
 };
 
 export default function AboutPage() {
   return (
     <div className="relative">
-      <section className="py-20">
+      <section className="pt-8">
+        <Container>
+          <Breadcrumbs items={[{ label: "About" }]} />
+        </Container>
+      </section>
+      <section className="pb-20 pt-10">
         <Container className="grid gap-12 md:grid-cols-[1fr_1.4fr] md:items-start">
           <div className="rounded border border-hair p-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -38,7 +44,8 @@ export default function AboutPage() {
               ))}
             </div>
 
-            <ul className="mt-8 grid gap-3">
+            <h2 className="mt-10 font-display text-xl font-bold text-ink">Why me</h2>
+            <ul className="mt-4 grid gap-3">
               {bio.credentials.map((credential) => (
                 <li key={credential} className="flex items-center gap-3 text-sm text-ink">
                   <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-red-pen" />

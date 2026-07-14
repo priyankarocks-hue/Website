@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import SectionHeading from "@/components/ui/SectionHeading";
 import NewsletterForm from "@/components/embeds/NewsletterForm";
 import { getAllPosts } from "@/lib/posts";
@@ -15,7 +16,12 @@ export default function InsightsPage() {
 
   return (
     <div className="relative">
-      <section className="py-20">
+      <section className="pt-8">
+        <Container>
+          <Breadcrumbs items={[{ label: "Insights" }]} />
+        </Container>
+      </section>
+      <section className="pb-20 pt-10">
         <Container className="grid items-center gap-10 md:grid-cols-[1.3fr_0.7fr]">
           <SectionHeading
             eyebrow="Subject: one idea a week."

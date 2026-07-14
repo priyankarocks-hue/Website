@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Container from "@/components/ui/Container";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CalendlyEmbed from "@/components/embeds/CalendlyEmbed";
 import { speakingTopics, mediaFeatures } from "@/content/speakingTopics";
@@ -13,7 +14,12 @@ export const metadata: Metadata = {
 export default function SpeakingPage() {
   return (
     <div className="relative">
-      <section className="py-20">
+      <section className="pt-8">
+        <Container>
+          <Breadcrumbs items={[{ label: "Speaking" }]} />
+        </Container>
+      </section>
+      <section className="pb-20 pt-10">
         <Container>
           <SectionHeading
             eyebrow="Subject: your stage."

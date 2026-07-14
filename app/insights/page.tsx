@@ -16,12 +16,21 @@ export default function InsightsPage() {
   return (
     <div className="relative">
       <section className="py-20">
-        <Container>
+        <Container className="grid items-center gap-10 md:grid-cols-[1.3fr_0.7fr]">
           <SectionHeading
             eyebrow="Subject: one idea a week."
             title="The column"
             description="New models for marketing in the AI era. Not summaries of other people's takes; ways of looking at the problem that I use on real budgets."
           />
+          <div className="hidden rounded border border-hair bg-white/40 p-2 md:block">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/the-column.jpg"
+              alt=""
+              aria-hidden="true"
+              className="h-44 w-full rounded object-cover [filter:saturate(0.9)]"
+            />
+          </div>
         </Container>
       </section>
 

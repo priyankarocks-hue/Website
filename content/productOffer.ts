@@ -1,21 +1,21 @@
-// PLACEHOLDER CONTENT: replace with your real course details.
+// PLACEHOLDER pricing/details: confirm before launch.
 // The Stripe Payment Link lives in lib/site.ts.
 
 export const productOffer = {
   name: "The AI Growth Playbook",
   tagline:
-    "For teams who refuse to sound like a template. The method behind a growth engine marketing to customers across 150+ markets: signal-to-content pipelines, human-in-the-loop AI localization, and GEO architecture, taught so your team can build your own.",
+    "For teams who refuse to sound like a template. The models from the column, turned into working systems: the brief template, the voice rubric, the AEO checklist, and the reporting format a CFO signs off on.",
   price: "$897",
   priceNote: "one-time, lifetime access",
-  seatsNote: "Cohort opens quarterly. Next cohort starts soon",
+  seatsNote: "Self-paced. Templates included",
   curriculum: [
-    "Module 1: Building an AI-powered signal pipeline, from reviews and chatbot logs to content priorities",
-    "Module 2: AI localization at scale with human-in-the-loop systems that don't need more headcount",
-    "Module 3: GEO, rebuilding your SEO for AI Overviews and zero-click search",
-    "Module 4: Attribution modelling that actually shows ROAS, not vanity metrics",
-    "Module 5: Media relations that land real coverage, not just a memo",
-    "Bonus: Live monthly Q&A with Priyanka for the first cohort",
+    "The Signal Desk: turn reviews, support logs, and chat transcripts into next month's calendar. You leave with the brief template.",
+    "The Voice Standard: build the editorial rubric and banned-phrase list that keeps AI output yours. You leave with the rubric.",
+    "The Second Reader: restructure content so AI search cites you. You leave with the AEO checklist and a schema starter.",
+    "The Receipts: attribution that survives zero-click search. You leave with the CFO-ready reporting format.",
+    "The Attention Ledger in practice: briefs that state their deposit, and the kill-rate review that raises quality.",
+    "Bonus: live monthly Q&A with Priyanka",
   ],
   outcome:
-    "Leave with a working growth playbook drawn from what it takes to run 4M+ acquisitions a year, not another generic prompt library.",
+    "Working artifacts, not just lessons: four templates your team can use the next morning, drawn from what it takes to run 4M+ acquisitions a year.",
 };

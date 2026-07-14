@@ -40,18 +40,30 @@ export default function InsightsPage() {
             <Link
               key={post.slug}
               href={`/insights/${post.slug}`}
-              className="group block border-t border-dashed border-[#cfcdbe] py-8"
+              className="group grid gap-6 border-t border-dashed border-[#cfcdbe] py-8 sm:grid-cols-[1fr_220px] sm:items-center"
             >
-              <p className="text-xs text-sub">{post.date}</p>
-              <h2 className="mt-3 max-w-2xl font-display text-xl font-bold text-ink group-hover:underline group-hover:decoration-red-pen group-hover:decoration-2 group-hover:underline-offset-4">
-                {post.title}
-                {post.slug === "regression-to-the-template" ? (
-                  <span className="pen-note ml-3 align-middle text-xl">start here</span>
-                ) : null}
-              </h2>
-              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-body">
-                {post.description}
-              </p>
+              <div>
+                <p className="text-xs text-sub">{post.date}</p>
+                <h2 className="mt-3 max-w-2xl font-display text-xl font-bold text-ink group-hover:underline group-hover:decoration-red-pen group-hover:decoration-2 group-hover:underline-offset-4">
+                  {post.title}
+                  {post.slug === "regression-to-the-template" ? (
+                    <span className="pen-note ml-3 align-middle text-xl">start here</span>
+                  ) : null}
+                </h2>
+                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-body">
+                  {post.description}
+                </p>
+              </div>
+              {post.image ? (
+                <div className="overflow-hidden rounded border border-hair bg-white/40 p-1.5">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={post.image}
+                    alt={post.imageAlt ?? ""}
+                    className="h-32 w-full rounded object-cover [filter:saturate(0.85)] transition-transform duration-500 group-hover:scale-[1.04]"
+                  />
+                </div>
+              ) : null}
             </Link>
           ))}
         </Container>

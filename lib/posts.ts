@@ -9,6 +9,8 @@ export type PostMeta = {
   description: string;
   date: string;
   slug: string;
+  image?: string;
+  imageAlt?: string;
 };
 
 export function getAllPosts(): PostMeta[] {

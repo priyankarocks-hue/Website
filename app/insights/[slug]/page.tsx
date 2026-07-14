@@ -37,6 +37,17 @@ export default async function InsightPostPage({
             {post.meta.title}
           </h1>
 
+          {post.meta.image ? (
+            <div className="mt-8 rounded border border-hair bg-white/40 p-2">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={post.meta.image}
+                alt={post.meta.imageAlt ?? ""}
+                className="h-64 w-full rounded object-cover [filter:saturate(0.85)] sm:h-80"
+              />
+            </div>
+          ) : null}
+
           <div className="prose prose-headings:font-display prose-headings:text-ink prose-a:text-red-pen prose-strong:text-ink mt-10 max-w-none text-body">
             <MDXRemote source={post.content} />
           </div>

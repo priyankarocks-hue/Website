@@ -23,6 +23,9 @@ export default function ServiceTiers() {
               {tier.cadence}
             </span>
           </p>
+          {tier.note ? (
+            <p className="pen-note mt-1 text-lg">{tier.note}</p>
+          ) : null}
 
           <p className="mt-4 text-sm leading-relaxed text-body">{tier.description}</p>
 

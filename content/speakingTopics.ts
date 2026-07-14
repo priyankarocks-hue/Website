@@ -24,6 +24,7 @@ export const speakingTopics = [
   },
   {
     title: "SEO Is Dying. Here's What GEO Looks Like in Practice.",
+    note: "most requested",
     description:
       "Google AI Overviews and zero-click search broke the old SEO playbook. Here's the schema, pillar-page, and intent-cluster architecture that keeps you visible anyway.",
     outcomes: [

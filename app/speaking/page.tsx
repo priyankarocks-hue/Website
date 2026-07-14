@@ -51,6 +51,9 @@ export default function SpeakingPage() {
                 <div>
                   <h3 className="font-display text-xl font-bold text-ink sm:text-2xl">
                     {topic.title}
+                    {"note" in topic && topic.note ? (
+                      <span className="pen-note ml-3 align-middle text-xl">{topic.note}</span>
+                    ) : null}
                   </h3>
                   <p className="mt-4 max-w-xl leading-relaxed text-body">
                     {topic.description}

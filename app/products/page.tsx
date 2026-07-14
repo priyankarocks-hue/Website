@@ -50,6 +50,7 @@ export default function ProductsPage() {
                 {productOffer.priceNote}
               </span>
             </p>
+            <p className="pen-note text-lg">one month of the retainer</p>
             <StripeCheckoutButton label="Enroll now" />
           </div>
         </Container>

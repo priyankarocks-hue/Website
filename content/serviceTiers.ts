@@ -9,6 +9,7 @@ type ServiceTier = {
   deliverables: string[];
   cta: string;
   featured?: boolean;
+  note?: string;
 };
 
 export const serviceTiers: ServiceTier[] = [
@@ -41,6 +42,7 @@ export const serviceTiers: ServiceTier[] = [
     ],
     cta: "Book a Discovery Call",
     featured: true,
+    note: "less than half the cost of hiring one",
   },
   {
     name: "Keynote + Workshop Bundle",

@@ -36,6 +36,9 @@ export default function InsightsPage() {
               <p className="text-xs text-sub">{post.date}</p>
               <h2 className="mt-3 max-w-2xl font-display text-xl font-bold text-ink group-hover:underline group-hover:decoration-red-pen group-hover:decoration-2 group-hover:underline-offset-4">
                 {post.title}
+                {post.slug === "regression-to-the-template" ? (
+                  <span className="pen-note ml-3 align-middle text-xl">start here</span>
+                ) : null}
               </h2>
               <p className="mt-3 max-w-2xl text-sm leading-relaxed text-body">
                 {post.description}

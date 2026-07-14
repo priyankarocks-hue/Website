@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Courier_Prime, Archivo } from "next/font/google";
+import { Courier_Prime, Archivo, Caveat } from "next/font/google";
 import "./globals.css";
 import { MotionPreferenceProvider } from "@/lib/motion-preference";
 import Header from "@/components/layout/Header";
@@ -18,6 +18,12 @@ const archivo = Archivo({
   weight: ["400", "500", "600"],
 });
 
+const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin"],
+  weight: ["600"],
+});
+
 export const metadata: Metadata = {
   title: {
     default: "Priyanka Joshi | Fractional CMO & AI Marketing Advisor",
@@ -33,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${courier.variable} ${archivo.variable} h-full antialiased`}>
+    <html lang="en" className={`${courier.variable} ${archivo.variable} ${caveat.variable} h-full antialiased`}>
       <body className="margin-rule flex min-h-full flex-col bg-paper text-ink">
         <MotionPreferenceProvider>
           <SkipLink />

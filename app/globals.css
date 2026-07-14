@@ -106,6 +106,16 @@ body {
   }
 }
 
+/* Handwritten editor notes: used only at decision moments, never as decoration. */
+.pen-note {
+  font-family: var(--font-caveat);
+  font-weight: 600;
+  color: var(--red);
+  display: inline-block;
+  transform: rotate(-2deg);
+  line-height: 1.1;
+}
+
 .skip-link {
   position: absolute;
   left: -9999px;

@@ -3,11 +3,10 @@ import Link from "next/link";
 type ButtonVariant = "primary" | "secondary" | "ghost";
 
 const variantClasses: Record<ButtonVariant, string> = {
-  primary:
-    "bg-gradient-to-r from-neon-lime to-neon-blue text-ink-950 font-semibold hover:brightness-110",
+  primary: "bg-red-pen text-paper font-semibold hover:bg-red-pen-dark active:scale-[0.98]",
   secondary:
-    "border border-white/15 text-white hover:border-neon-lime/60 hover:bg-white/5",
-  ghost: "text-white/80 hover:text-white",
+    "border-[1.5px] border-ink text-ink hover:bg-ink/5 active:scale-[0.98]",
+  ghost: "text-ink/80 hover:text-ink",
 };
 
 export default function Button({
@@ -23,7 +22,7 @@ export default function Button({
   className?: string;
   external?: boolean;
 }) {
-  const classes = `inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm transition-all duration-200 ease-out ${variantClasses[variant]} ${className}`;
+  const classes = `inline-flex items-center justify-center gap-2 rounded px-6 py-3 text-sm transition-all duration-150 ease-out ${variantClasses[variant]} ${className}`;
 
   if (external) {
     return (

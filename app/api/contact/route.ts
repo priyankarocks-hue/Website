@@ -16,7 +16,7 @@ export async function POST(request: Request) {
   }
 
   if (!resendApiKey) {
-    console.log("[contact] Resend not configured — logging submission instead:", {
+    console.log("[contact] Resend not configured; logging submission instead:", {
       name,
       email,
       reason,

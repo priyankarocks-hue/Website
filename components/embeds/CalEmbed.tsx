@@ -12,19 +12,19 @@ export default function CalEmbed({ calLink = DEFAULT_CAL_LINK }: { calLink?: str
     (async () => {
       const cal = await getCalApi();
       cal("ui", {
-        theme: "dark",
-        styles: { branding: { brandColor: "#d7f24a" } },
+        theme: "light",
+        styles: { branding: { brandColor: "#c8321c" } },
         hideEventTypeDetails: false,
       });
     })();
   }, []);
 
   return (
-    <div className="glass-card overflow-hidden p-2">
+    <div className="overflow-hidden rounded border border-hair bg-white/40 p-2">
       <Cal
         calLink={calLink}
         style={{ width: "100%", height: "600px", overflow: "scroll" }}
-        config={{ theme: "dark" }}
+        config={{ theme: "light" }}
       />
     </div>
   );

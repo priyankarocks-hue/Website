@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter } from "next/font/google";
+import { Courier_Prime, Archivo } from "next/font/google";
 import "./globals.css";
 import { MotionPreferenceProvider } from "@/lib/motion-preference";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SkipLink from "@/components/layout/SkipLink";
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const courier = Courier_Prime({
+  variable: "--font-courier",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["400", "700"],
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -32,11 +33,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${spaceGrotesk.variable} ${inter.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col bg-ink-950 text-foreground">
+    <html lang="en" className={`${courier.variable} ${archivo.variable} h-full antialiased`}>
+      <body className="margin-rule flex min-h-full flex-col bg-paper text-ink">
         <MotionPreferenceProvider>
           <SkipLink />
           <Header />

@@ -1,4 +1,6 @@
 import Hero from "@/components/sections/Hero";
+import ProofStrip from "@/components/sections/ProofStrip";
+import MediaLogos from "@/components/sections/MediaLogos";
 import GoalCTAGrid from "@/components/sections/GoalCTAGrid";
 import PageTeasers from "@/components/sections/PageTeasers";
 import AIToolsStack from "@/components/sections/AIToolsStack";
@@ -8,10 +10,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <PageTeasers />
+      <ProofStrip />
       <AIToolsStack />
+      <PageTeasers />
       <GoalCTAGrid />
       <TestimonialStrip />
+      <MediaLogos />
     </>
   );
 }

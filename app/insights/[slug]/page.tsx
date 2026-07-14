@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import BackgroundLayer from "@/components/three/BackgroundLayer";
 import Container from "@/components/ui/Container";
 import { getAllPosts, getPostSource } from "@/lib/posts";
 
@@ -31,16 +30,14 @@ export default async function InsightPostPage({
 
   return (
     <div className="relative">
-      <BackgroundLayer variant="ambient" />
-
       <article className="py-20">
         <Container className="max-w-3xl">
-          <p className="text-xs uppercase tracking-widest text-neon-blue">{post.meta.date}</p>
-          <h1 className="mt-3 font-display text-3xl font-semibold text-white sm:text-4xl">
+          <p className="text-xs text-sub">{post.meta.date}</p>
+          <h1 className="mt-3 font-display text-3xl font-bold text-ink sm:text-4xl">
             {post.meta.title}
           </h1>
 
-          <div className="prose prose-invert prose-headings:font-display prose-a:text-neon-blue mt-10 max-w-none">
+          <div className="prose prose-headings:font-display prose-headings:text-ink prose-a:text-red-pen prose-strong:text-ink mt-10 max-w-none text-body">
             <MDXRemote source={post.content} />
           </div>
         </Container>

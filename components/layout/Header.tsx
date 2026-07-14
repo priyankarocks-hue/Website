@@ -17,10 +17,10 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/5 bg-ink-950/70 backdrop-blur-lg">
+    <header className="sticky top-0 z-50 border-b border-hair bg-paper/95 backdrop-blur-sm">
       <Container className="flex h-18 items-center justify-between py-4">
-        <Link href="/" className="font-display text-lg font-semibold text-white">
-          Priyanka Joshi<span className="text-neon-blue">.</span>
+        <Link href="/" className="font-display text-lg font-bold text-ink">
+          Priyanka Joshi<span className="text-red-pen">.</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -28,7 +28,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-slate-300 transition-colors hover:text-white"
+              className="text-sm text-sub transition-colors hover:text-ink"
             >
               {link.label}
             </Link>
@@ -36,14 +36,14 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <Button href="/contact" className="px-5 py-2.5 text-xs">
+          <Button href="/contact" variant="secondary" className="px-5 py-2 text-xs">
             Book a Call
           </Button>
         </div>
 
         <button
           type="button"
-          className="text-white md:hidden"
+          className="text-ink md:hidden"
           aria-expanded={open}
           aria-label="Toggle navigation menu"
           onClick={() => setOpen((prev) => !prev)}
@@ -55,13 +55,13 @@ export default function Header() {
       </Container>
 
       {open ? (
-        <nav className="border-t border-white/5 bg-ink-950 px-6 py-4 md:hidden">
+        <nav className="border-t border-hair bg-paper px-6 py-4 md:hidden">
           <ul className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="block text-sm text-slate-300 hover:text-white"
+                  className="block text-sm text-sub hover:text-ink"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}

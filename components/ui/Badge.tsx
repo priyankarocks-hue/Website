@@ -1,6 +1,6 @@
 export default function Badge({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-neon-blue/30 bg-neon-blue/10 px-3 py-1 text-xs font-medium uppercase tracking-wide text-neon-blue">
+    <span className="inline-flex items-center rounded border-[1.5px] border-red-pen px-2.5 py-1 font-display text-xs font-bold uppercase tracking-wide text-red-pen">
       {children}
     </span>
   );

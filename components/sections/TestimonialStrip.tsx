@@ -2,33 +2,48 @@
 
 import { motion } from "framer-motion";
 import Container from "@/components/ui/Container";
-import GlassCard from "@/components/ui/GlassCard";
-import SectionHeading from "@/components/ui/SectionHeading";
 import { testimonials } from "@/content/testimonials";
+
+const [featured, ...rest] = testimonials;
 
 export default function TestimonialStrip() {
   return (
-    <section className="relative py-24">
-      <Container>
-        <SectionHeading eyebrow="Social proof" title="What clients and organizers say" align="center" />
+    <section className="border-t border-hair py-24">
+      <Container className="grid gap-14 md:grid-cols-12 md:gap-10">
+        <motion.figure
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5 }}
+          className="border-l-[3px] border-red-pen pl-6 md:col-span-7"
+        >
+          <blockquote className="font-display text-xl font-bold leading-normal text-ink sm:text-2xl">
+            &ldquo;{featured.quote}&rdquo;
+          </blockquote>
+          <figcaption className="mt-5">
+            <p className="text-sm font-semibold text-ink">{featured.name}</p>
+            <p className="text-sm text-sub">{featured.role}</p>
+          </figcaption>
+        </motion.figure>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
+        <div className="md:col-span-4 md:col-start-9">
+          {rest.map((testimonial, index) => (
+            <motion.figure
               key={testimonial.name}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: 0.1 + index * 0.1 }}
+              className={index > 0 ? "mt-10 border-t border-hair pt-10" : ""}
             >
-              <GlassCard className="flex h-full flex-col justify-between">
-                <p className="text-slate-200">&ldquo;{testimonial.quote}&rdquo;</p>
-                <div className="mt-6">
-                  <p className="text-sm font-semibold text-white">{testimonial.name}</p>
-                  <p className="text-xs text-slate-400">{testimonial.role}</p>
-                </div>
-              </GlassCard>
-            </motion.div>
+              <blockquote className="text-sm leading-relaxed text-body">
+                &ldquo;{testimonial.quote}&rdquo;
+              </blockquote>
+              <figcaption className="mt-4">
+                <p className="text-sm font-semibold text-ink">{testimonial.name}</p>
+                <p className="text-xs text-sub">{testimonial.role}</p>
+              </figcaption>
+            </motion.figure>
           ))}
         </div>
       </Container>

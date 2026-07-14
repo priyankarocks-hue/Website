@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Container from "@/components/ui/Container";
-import GlassCard from "@/components/ui/GlassCard";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Badge from "@/components/ui/Badge";
 import StripeCheckoutButton from "@/components/embeds/StripeCheckoutButton";
@@ -11,47 +10,51 @@ export const metadata: Metadata = {
   description: productOffer.tagline,
 };
 
-// Intentionally lighter visual treatment than Home/Speaking/Advisory —
-// this is the checkout page, so it favors clarity/conversion over spectacle
-// and skips the full 3D hero background.
+// Checkout page: favors clarity and conversion over spectacle.
 export default function ProductsPage() {
   return (
-    <div className="relative bg-gradient-to-b from-ink-950 to-ink-900">
+    <div className="relative">
       <section className="py-20">
         <Container className="max-w-3xl text-center">
-          <SectionHeading eyebrow="Course" title={productOffer.name} align="center" />
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">{productOffer.tagline}</p>
+          <SectionHeading
+            eyebrow="Subject: the playbook."
+            title={productOffer.name}
+            align="center"
+          />
+          <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-body">
+            {productOffer.tagline}
+          </p>
         </Container>
       </section>
 
       <section className="pb-24">
-        <Container className="grid gap-8 md:grid-cols-[1.4fr_1fr] md:items-start">
-          <GlassCard>
-            <p className="text-sm font-semibold uppercase tracking-widest text-neon-blue">
-              What&apos;s inside
-            </p>
-            <ul className="mt-6 space-y-3 text-slate-200">
+        <Container className="grid gap-6 md:grid-cols-[1.4fr_1fr] md:items-start">
+          <div className="rounded border border-hair bg-white/40 p-8">
+            <p className="font-display text-lg font-bold text-ink">What&apos;s inside</p>
+            <ul className="mt-6 space-y-3 text-body">
               {productOffer.curriculum.map((item) => (
                 <li key={item} className="flex gap-3">
-                  <span className="text-neon-blue">&bull;</span>
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-red-pen" />
                   {item}
                 </li>
               ))}
             </ul>
-            <p className="mt-6 text-sm text-slate-400">{productOffer.outcome}</p>
-          </GlassCard>
+            <p className="mt-6 text-sm leading-relaxed text-sub">{productOffer.outcome}</p>
+          </div>
 
-          <GlassCard className="flex flex-col items-start gap-4">
+          <div className="flex flex-col items-start gap-4 rounded border border-red-pen bg-white/50 p-8">
             <Badge>{productOffer.seatsNote}</Badge>
-            <p className="font-display text-4xl font-semibold text-white">
+            <p className="font-display text-4xl font-bold text-ink">
               {productOffer.price}
-              <span className="ml-2 text-sm font-normal text-slate-400">{productOffer.priceNote}</span>
+              <span className="ml-2 font-sans text-sm font-normal text-sub">
+                {productOffer.priceNote}
+              </span>
             </p>
             <StripeCheckoutButton href={productOffer.stripeLink} label="Enroll now" />
-            <p className="text-xs text-slate-500">
-              Placeholder checkout link — connect your real Stripe Payment Link before launch.
+            <p className="text-xs text-sub">
+              Placeholder checkout link. Connect your real Stripe Payment Link before launch.
             </p>
-          </GlassCard>
+          </div>
         </Container>
       </section>
     </div>

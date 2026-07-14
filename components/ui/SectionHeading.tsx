@@ -12,14 +12,12 @@ export default function SectionHeading({
   return (
     <div className={align === "center" ? "text-center" : "text-left"}>
       {eyebrow ? (
-        <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-neon-blue">
-          {eyebrow}
-        </p>
+        <p className="mb-4 text-xs uppercase tracking-[0.12em] text-sub">{eyebrow}</p>
       ) : null}
-      <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">{title}</h2>
+      <h2 className="font-display text-2xl font-bold text-ink sm:text-3xl">{title}</h2>
       {description ? (
         <p
-          className={`mt-4 max-w-2xl text-lg text-slate-300 ${
+          className={`mt-4 max-w-2xl leading-relaxed text-body ${
             align === "center" ? "mx-auto" : ""
           }`}
         >

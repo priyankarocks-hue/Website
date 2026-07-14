@@ -2,44 +2,39 @@
 
 import { motion } from "framer-motion";
 import Container from "@/components/ui/Container";
-import GlassCard from "@/components/ui/GlassCard";
-import SectionHeading from "@/components/ui/SectionHeading";
-import { aiStack } from "@/content/aiStack";
+import { systems } from "@/content/aiStack";
 
 export default function AIToolsStack() {
   return (
     <section className="relative py-24">
       <Container>
-        <SectionHeading
-          eyebrow="The system, not the pitch deck"
-          title="This is the actual stack running a $1M+/month budget"
-          description="Not a wishlist. This is what's live at Deriv, across 15+ markets, right now."
-          align="center"
-        />
+        <h2 className="font-display text-2xl font-bold text-ink sm:text-3xl">
+          Four systems. One growth engine.
+        </h2>
+        <p className="mt-4 max-w-2xl leading-relaxed text-body">
+          These are my methods: proven at scale, designed fresh for every team. I set the
+          direction and the editorial standard, your AI engineers handle the technical
+          build, and what ships is worth reading and provably converts.
+        </p>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2">
-          {aiStack.map((group, index) => (
+        <div className="mt-12">
+          {systems.map((system, index) => (
             <motion.div
-              key={group.stage}
-              initial={{ opacity: 0, y: 20 }}
+              key={system.name}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
+              onViewportEnter={(entry) => entry?.target.classList.add("in-view")}
+              className="grid gap-4 border-t border-dashed border-[#cfcdbe] py-9 md:grid-cols-[280px_1fr] md:gap-11"
             >
-              <GlassCard className="h-full">
-                <p className="text-xs font-semibold uppercase tracking-widest text-neon-blue">
-                  {String(index + 1).padStart(2, "0")} &mdash; {group.stage}
-                </p>
-                <p className="mt-2 text-sm text-slate-400">{group.description}</p>
-                <ul className="mt-6 space-y-4">
-                  {group.tools.map((tool) => (
-                    <li key={tool.name}>
-                      <p className="text-sm font-semibold text-white">{tool.name}</p>
-                      <p className="text-sm text-slate-400">{tool.use}</p>
-                    </li>
-                  ))}
-                </ul>
-              </GlassCard>
+              <h3 className="font-display text-xl font-bold text-ink">
+                <span className="red-underline">{system.name}</span>
+              </h3>
+              <div>
+                <p className="leading-relaxed text-body">{system.what}</p>
+                <p className="mt-3 text-sm leading-relaxed text-sub">{system.practice}</p>
+              </div>
             </motion.div>
           ))}
         </div>

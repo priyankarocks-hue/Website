@@ -4,6 +4,9 @@ import { useState } from "react";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
+const inputClasses =
+  "mt-2 w-full rounded border border-[#cfcdbe] bg-white/60 px-4 py-2.5 text-sm text-ink placeholder:text-sub/70 focus:border-red-pen focus:outline-none";
+
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
 
@@ -31,51 +34,36 @@ export default function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="glass-card p-8 text-center">
-        <p className="font-display text-lg font-semibold text-white">Message sent</p>
-        <p className="mt-2 text-sm text-slate-300">
-          Thanks for reaching out — I&apos;ll get back to you within 2 business days.
+      <div className="rounded border border-hair bg-white/40 p-8 text-center">
+        <p className="font-display text-lg font-bold text-ink">Message sent</p>
+        <p className="mt-2 text-sm text-body">
+          Thanks for reaching out. I&apos;ll get back to you within 2 business days.
         </p>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="glass-card space-y-5 p-8">
+    <form onSubmit={handleSubmit} className="space-y-5 rounded border border-hair bg-white/40 p-8">
       <div>
-        <label htmlFor="name" className="text-sm font-medium text-slate-200">
+        <label htmlFor="name" className="text-sm font-medium text-ink">
           Name
         </label>
-        <input
-          id="name"
-          name="name"
-          required
-          className="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-neon-blue focus:outline-none"
-        />
+        <input id="name" name="name" required className={inputClasses} />
       </div>
 
       <div>
-        <label htmlFor="email" className="text-sm font-medium text-slate-200">
+        <label htmlFor="email" className="text-sm font-medium text-ink">
           Email
         </label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          required
-          className="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-neon-blue focus:outline-none"
-        />
+        <input id="email" name="email" type="email" required className={inputClasses} />
       </div>
 
       <div>
-        <label htmlFor="reason" className="text-sm font-medium text-slate-200">
+        <label htmlFor="reason" className="text-sm font-medium text-ink">
           What&apos;s this about?
         </label>
-        <select
-          id="reason"
-          name="reason"
-          className="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white focus:border-neon-blue focus:outline-none"
-        >
+        <select id="reason" name="reason" className={inputClasses}>
           <option value="Advisory inquiry">Advisory inquiry</option>
           <option value="Speaking inquiry">Speaking inquiry</option>
           <option value="Course question">Course question</option>
@@ -84,29 +72,23 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="text-sm font-medium text-slate-200">
+        <label htmlFor="message" className="text-sm font-medium text-ink">
           Message
         </label>
-        <textarea
-          id="message"
-          name="message"
-          required
-          rows={5}
-          className="mt-2 w-full rounded-xl border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-neon-blue focus:outline-none"
-        />
+        <textarea id="message" name="message" required rows={5} className={inputClasses} />
       </div>
 
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="w-full rounded-full bg-gradient-to-r from-neon-lime to-neon-blue px-6 py-3 text-sm font-semibold text-ink-950 transition hover:brightness-110 disabled:opacity-60"
+        className="w-full rounded bg-red-pen px-6 py-3 text-sm font-semibold text-paper transition hover:bg-red-pen-dark active:scale-[0.98] disabled:opacity-60"
       >
         {status === "submitting" ? "Sending..." : "Send message"}
       </button>
 
       {status === "error" ? (
-        <p className="text-sm text-red-400">
-          Something went wrong sending your message — please try again.
+        <p className="text-sm text-red-pen">
+          Something went wrong sending your message. Please try again.
         </p>
       ) : null}
     </form>

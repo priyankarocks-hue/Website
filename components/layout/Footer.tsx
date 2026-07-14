@@ -21,7 +21,7 @@ const columns = [
   },
 ];
 
-// PLACEHOLDER — swap for real handles if these ever change.
+// PLACEHOLDER: swap for real handles if these ever change.
 const socialLinks = [
   { href: "https://www.linkedin.com/in/priyanka13joshi", label: "LinkedIn" },
   { href: "https://x.com/priyankarocks", label: "X (Twitter)" },
@@ -29,13 +29,13 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/5 bg-ink-950">
+    <footer className="border-t border-hair bg-paper">
       <Container className="grid gap-12 py-16 md:grid-cols-[1.5fr_1fr_1fr_1.5fr]">
         <div>
-          <p className="font-display text-lg font-semibold text-white">
-            Priyanka Joshi<span className="text-neon-blue">.</span>
+          <p className="font-display text-lg font-bold text-ink">
+            Priyanka Joshi<span className="text-red-pen">.</span>
           </p>
-          <p className="mt-3 max-w-xs text-sm text-slate-400">
+          <p className="mt-3 max-w-xs text-sm text-sub">
             Fractional CMO and keynote speaker building AI content systems that don&apos;t
             sound like a template.
           </p>
@@ -46,7 +46,7 @@ export default function Footer() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-slate-400 transition-colors hover:text-neon-blue"
+                className="text-sm text-sub transition-colors hover:text-red-pen"
               >
                 {social.label}
               </a>
@@ -56,13 +56,13 @@ export default function Footer() {
 
         {columns.map((column) => (
           <div key={column.title}>
-            <p className="text-sm font-semibold text-white">{column.title}</p>
+            <p className="font-display text-sm font-bold text-ink">{column.title}</p>
             <ul className="mt-4 space-y-3">
               {column.links.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-slate-400 transition-colors hover:text-white"
+                    className="text-sm text-sub transition-colors hover:text-ink"
                   >
                     {link.label}
                   </Link>
@@ -73,8 +73,8 @@ export default function Footer() {
         ))}
 
         <div>
-          <p className="text-sm font-semibold text-white">Join the list</p>
-          <p className="mt-4 text-sm text-slate-400">
+          <p className="font-display text-sm font-bold text-ink">Join the list</p>
+          <p className="mt-4 text-sm text-sub">
             One idea a week on AI-powered content and brand strategy. No spam.
           </p>
           <div className="mt-4">
@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
       </Container>
 
-      <Container className="flex flex-col gap-2 border-t border-white/5 py-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+      <Container className="flex flex-col gap-2 border-t border-hair py-6 text-xs text-sub sm:flex-row sm:items-center sm:justify-between">
         <p>&copy; {new Date().getFullYear()} Priyanka Joshi. All rights reserved.</p>
       </Container>
     </footer>

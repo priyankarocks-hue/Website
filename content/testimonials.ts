@@ -4,7 +4,7 @@
 export const testimonials = [
   {
     quote:
-      "Priyanka didn't tell us to 'use AI more.' She showed us exactly where our content ops were slow, and where a system could do the work of three hires.",
+      "Priyanka didn't tell us to 'use AI more.' She showed us where a system could do the work of three hires.",
     name: "Jordan Lee",
     role: "Head of Growth, Series A SaaS startup",
   },
@@ -16,7 +16,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Three months into the fractional CMO engagement, our content output doubled and press coverage tripled — without sounding like a bot wrote it.",
+      "Three months into the fractional CMO engagement, our content output doubled and press coverage tripled, without sounding like a bot wrote it.",
     name: "Sam Okafor",
     role: "Co-Founder, D2C startup",
   },

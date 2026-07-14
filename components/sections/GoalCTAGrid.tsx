@@ -3,31 +3,31 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
-import GlassCard from "@/components/ui/GlassCard";
-import SectionHeading from "@/components/ui/SectionHeading";
 
 const goals = [
   {
-    title: "Book an Advisory Call",
-    description: "Get a straight answer on where AI helps your marketing funnel and where it doesn't.",
+    title: "Hire me fractionally",
+    description:
+      "A straight answer on where AI helps your funnel and where it doesn't, then a system designed for your team.",
     href: "/advisory",
-    cta: "Explore advisory services",
+    cta: "See advisory services",
   },
   {
-    title: "Book Me to Speak",
-    description: "A keynote or workshop that leaves your audience with an actual plan, not just hype.",
+    title: "Put me on your stage",
+    description:
+      "A keynote or workshop your audience can act on the next morning. No hype, no fear-mongering.",
     href: "/speaking",
     cta: "See speaking topics",
   },
   {
-    title: "Join the List",
-    description: "One idea a week on AI marketing strategy — no fluff, no spam.",
+    title: "Read the column",
+    description: "One idea a week on AI marketing strategy. No fluff, no spam.",
     href: "/insights",
     cta: "Read the latest",
   },
   {
-    title: "Take the Course",
-    description: "A self-paced system for building an AI-augmented marketing function.",
+    title: "Learn the system",
+    description: "A self-paced course for building an AI-augmented marketing function.",
     href: "/products",
     cta: "See the curriculum",
   },
@@ -37,35 +37,39 @@ export default function GoalCTAGrid() {
   return (
     <section className="relative py-24">
       <Container>
-        <SectionHeading
-          eyebrow="Ways to work together"
-          title="Whatever brought you here, there's a next step"
-          align="center"
-        />
+        <h2 className="font-display text-2xl font-bold text-ink sm:text-3xl">
+          Four ways in.
+        </h2>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2">
           {goals.map((goal, index) => (
             <motion.div
               key={goal.title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
+              transition={{ duration: 0.5, delay: index * 0.06 }}
             >
-              <GlassCard className="flex h-full flex-col justify-between">
+              <Link
+                href={goal.href}
+                className="group flex h-full flex-col justify-between rounded border border-hair p-7 transition-colors hover:border-red-pen/60"
+              >
                 <div>
-                  <h3 className="font-display text-lg font-semibold text-white">
-                    {goal.title}
-                  </h3>
-                  <p className="mt-3 text-sm text-slate-300">{goal.description}</p>
+                  <h3 className="font-display text-lg font-bold text-ink">{goal.title}</h3>
+                  <p className="mt-2.5 text-sm leading-relaxed text-body">
+                    {goal.description}
+                  </p>
                 </div>
-                <Link
-                  href={goal.href}
-                  className="mt-6 inline-flex items-center text-sm font-semibold text-neon-blue hover:text-neon-lime"
-                >
-                  {goal.cta} &rarr;
-                </Link>
-              </GlassCard>
+                <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-red-pen">
+                  {goal.cta}
+                  <span
+                    aria-hidden="true"
+                    className="transition-transform group-hover:translate-x-1"
+                  >
+                    &rarr;
+                  </span>
+                </span>
+              </Link>
             </motion.div>
           ))}
         </div>

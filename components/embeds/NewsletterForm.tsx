@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-// PLACEHOLDER INTEGRATION — swap the form action for your real beehiiv
+// PLACEHOLDER INTEGRATION: swap the form action for your real beehiiv
 // (or ConvertKit) embed endpoint before launch.
 export default function NewsletterForm({ compact = false }: { compact?: boolean }) {
   const [submitted, setSubmitted] = useState(false);
@@ -23,11 +23,11 @@ export default function NewsletterForm({ compact = false }: { compact?: boolean 
         type="email"
         required
         placeholder="you@company.com"
-        className="w-full rounded-full border border-white/15 bg-white/5 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-neon-blue focus:outline-none"
+        className="w-full rounded border border-[#cfcdbe] bg-white/60 px-4 py-2.5 text-sm text-ink placeholder:text-sub/70 focus:border-red-pen focus:outline-none"
       />
       <button
         type="submit"
-        className="rounded-full bg-gradient-to-r from-neon-lime to-neon-blue px-5 py-2.5 text-sm font-semibold text-ink-950 transition hover:brightness-110"
+        className="rounded bg-ink px-5 py-2.5 text-sm font-semibold text-paper transition hover:bg-ink/85 active:scale-[0.98]"
       >
         {submitted ? "Subscribed!" : "Subscribe"}
       </button>

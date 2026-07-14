@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import BackgroundLayer from "@/components/three/BackgroundLayer";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ContactForm from "@/components/sections/ContactForm";
@@ -13,14 +12,12 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="relative">
-      <BackgroundLayer variant="ambient" />
-
       <section className="py-20">
         <Container>
           <SectionHeading
-            eyebrow="Contact"
+            eyebrow="Subject: your move."
             title="Let's talk"
-            description="Whether it's an advisory engagement, a speaking inquiry, or a question about the course — start here."
+            description="Advisory, speaking, or a question about the course. Two business days, tops, for a reply."
           />
         </Container>
       </section>
@@ -29,7 +26,7 @@ export default function ContactPage() {
         <Container className="grid gap-10 md:grid-cols-2 md:items-start">
           <ContactForm />
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-neon-blue">
+            <p className="mb-4 font-display text-lg font-bold text-ink">
               Prefer to just grab time?
             </p>
             <CalEmbed calLink="your-username/intro-call" />

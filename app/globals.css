@@ -2,24 +2,23 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #05060a;
-  --background-alt: #0b0d14;
-  --foreground: #f8fafc;
-  --font-display: var(--font-space-grotesk);
-  --font-body: var(--font-inter);
+  --paper: #fbfaf5;
+  --ink: #23231d;
+  --sub: #6b6b5e;
+  --red: #c8321c;
+  --hair: #e3e1d4;
+  --font-display: var(--font-courier);
+  --font-body: var(--font-archivo);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-background-alt: var(--background-alt);
-  --color-foreground: var(--foreground);
-
-  --color-ink-950: #05060a;
-  --color-ink-900: #0b0d14;
-  --color-ink-800: #12141f;
-
-  --color-neon-lime: #d7f24a;
-  --color-neon-blue: #3b6fff;
+  --color-paper: #fbfaf5;
+  --color-ink: #23231d;
+  --color-sub: #6b6b5e;
+  --color-body: #45453a;
+  --color-red-pen: #c8321c;
+  --color-red-pen-dark: #a92a17;
+  --color-hair: #e3e1d4;
 
   --font-sans: var(--font-body);
   --font-display: var(--font-display);
@@ -37,36 +36,74 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--paper);
+  color: var(--ink);
   font-family: var(--font-sans);
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--color-neon-lime) 50%, transparent);
-  color: #fff;
+  background: color-mix(in srgb, var(--red) 20%, transparent);
 }
 
-.text-gradient {
-  background-image: linear-gradient(90deg, var(--color-neon-lime), var(--color-neon-blue));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+/* The editor's margin rule: a faint red hairline down the left of every page. */
+.margin-rule::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 24px;
+  width: 1px;
+  background: rgba(200, 50, 28, 0.22);
+  pointer-events: none;
+  z-index: 5;
 }
 
-.glass-card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 1.25rem;
-  transition: box-shadow 200ms ease-out, transform 200ms ease-out, border-color 200ms ease-out;
+@media (min-width: 768px) {
+  .margin-rule::before {
+    left: 88px;
+  }
 }
 
-.glass-card:hover {
-  border-color: rgba(59, 111, 255, 0.4);
-  box-shadow: 0 0 40px rgba(59, 111, 255, 0.2);
-  transform: translateY(-4px);
+/* Struck copy in the hero: the red line follows the text through wraps. */
+.strike {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--red);
+  color: #4a4a40;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .strike {
+    text-decoration-color: transparent;
+    animation: strike 0.45s ease-in 0.9s forwards;
+  }
+
+  @keyframes strike {
+    to {
+      text-decoration-color: var(--red);
+    }
+  }
+}
+
+/* System names: a red underline that draws itself on reveal. */
+.red-underline {
+  display: inline-block;
+  padding-bottom: 2px;
+  background-image: linear-gradient(var(--red), var(--red));
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  background-position: 0 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .red-underline {
+    background-size: 0% 3px;
+    transition: background-size 0.5s ease 0.2s;
+  }
+
+  .in-view .red-underline {
+    background-size: 100% 3px;
+  }
 }
 
 .skip-link {
@@ -75,8 +112,8 @@ body {
   top: 0;
   z-index: 100;
   padding: 0.75rem 1.25rem;
-  background: var(--color-neon-blue);
-  color: #fff;
+  background: var(--ink);
+  color: var(--paper);
   border-radius: 0 0 0.5rem 0;
 }
 

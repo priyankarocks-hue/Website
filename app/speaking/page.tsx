@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
-import CalEmbed from "@/components/embeds/CalEmbed";
+import CalendlyEmbed from "@/components/embeds/CalendlyEmbed";
 import { speakingTopics, mediaFeatures } from "@/content/speakingTopics";
 
 export const metadata: Metadata = {
@@ -93,7 +93,7 @@ export default function SpeakingPage() {
         <Container>
           <SectionHeading title="Check availability for your event" align="center" />
           <div className="mt-10">
-            <CalEmbed calLink="your-username/speaking-inquiry" />
+            <CalendlyEmbed />
           </div>
         </Container>
       </section>

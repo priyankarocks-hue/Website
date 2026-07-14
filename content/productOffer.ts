@@ -1,4 +1,5 @@
-// PLACEHOLDER CONTENT — replace with your real course details and Stripe Payment Link.
+// PLACEHOLDER CONTENT: replace with your real course details.
+// The Stripe Payment Link lives in lib/site.ts.
 
 export const productOffer = {
   name: "The AI Growth Playbook",
@@ -17,5 +18,4 @@ export const productOffer = {
   ],
   outcome:
     "Leave with a working growth playbook drawn from what it takes to run 4M+ acquisitions a year, not another generic prompt library.",
-  stripeLink: "https://buy.stripe.com/test_placeholder",
 };

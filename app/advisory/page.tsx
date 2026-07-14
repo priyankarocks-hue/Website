@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ServiceTiers from "@/components/sections/ServiceTiers";
-import CalEmbed from "@/components/embeds/CalEmbed";
+import CalendlyEmbed from "@/components/embeds/CalendlyEmbed";
 
 export const metadata: Metadata = {
   title: "Advisory",
@@ -65,7 +65,7 @@ export default function AdvisoryPage() {
         <Container>
           <SectionHeading title="Book a discovery call" align="center" />
           <div className="mt-10">
-            <CalEmbed calLink="your-username/intro-call" />
+            <CalendlyEmbed />
           </div>
         </Container>
       </section>

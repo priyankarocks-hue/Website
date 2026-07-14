@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ContactForm from "@/components/sections/ContactForm";
-import CalEmbed from "@/components/embeds/CalEmbed";
+import CalendlyEmbed from "@/components/embeds/CalendlyEmbed";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -29,7 +29,7 @@ export default function ContactPage() {
             <p className="mb-4 font-display text-lg font-bold text-ink">
               Prefer to just grab time?
             </p>
-            <CalEmbed calLink="your-username/intro-call" />
+            <CalendlyEmbed showContactFallbackLink={false} />
           </div>
         </Container>
       </section>

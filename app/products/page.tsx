@@ -50,10 +50,7 @@ export default function ProductsPage() {
                 {productOffer.priceNote}
               </span>
             </p>
-            <StripeCheckoutButton href={productOffer.stripeLink} label="Enroll now" />
-            <p className="text-xs text-sub">
-              Placeholder checkout link. Connect your real Stripe Payment Link before launch.
-            </p>
+            <StripeCheckoutButton label="Enroll now" />
           </div>
         </Container>
       </section>

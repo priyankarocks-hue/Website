@@ -13,6 +13,8 @@ export const metadata: Metadata = {
 
 export default function InsightsPage() {
   const posts = getAllPosts();
+  const chronological = [...posts].sort((a, b) => (a.date > b.date ? 1 : -1));
+  const issueOf = (slug: string) => chronological.findIndex((p) => p.slug === slug) + 1;
 
   return (
     <div className="relative">
@@ -49,7 +51,7 @@ export default function InsightsPage() {
               className="group grid gap-6 border-t border-dashed border-[#cfcdbe] py-8 sm:grid-cols-[1fr_220px] sm:items-center"
             >
               <div>
-                <p className="text-xs text-sub">{post.date}</p>
+                <p className="text-xs uppercase tracking-[0.12em] text-sub">Issue {issueOf(post.slug)} &middot; {post.date}</p>
                 <h2 className="mt-3 max-w-2xl font-display text-xl font-bold text-ink group-hover:underline group-hover:decoration-red-pen group-hover:decoration-2 group-hover:underline-offset-4">
                   {post.title}
                   {post.slug === "regression-to-the-template" ? (

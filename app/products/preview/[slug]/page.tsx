@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Lock } from "@phosphor-icons/react/dist/ssr";
 import Container from "@/components/ui/Container";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
+import ReadingProgress from "@/components/ui/ReadingProgress";
 import StripeCheckoutButton from "@/components/embeds/StripeCheckoutButton";
 import { previewLessons } from "@/content/courseCurriculum";
 import { productOffer } from "@/content/productOffer";
@@ -37,6 +38,7 @@ export default async function PreviewLessonPage({
 
   return (
     <div className="relative">
+      <ReadingProgress />
       <section className="pt-8">
         <Container className="max-w-3xl">
           <Breadcrumbs

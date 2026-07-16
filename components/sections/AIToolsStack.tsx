@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Container from "@/components/ui/Container";
+import GrowthEngine from "@/components/sections/GrowthEngine";
 import { systems } from "@/content/aiStack";
 
 export default function AIToolsStack() {
@@ -17,7 +18,9 @@ export default function AIToolsStack() {
           build, and what ships is worth reading and provably converts.
         </p>
 
-        <div className="mt-12">
+        <GrowthEngine />
+
+        <div className="mt-16">
           {systems.map((system, index) => (
             <motion.div
               key={system.name}

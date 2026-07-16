@@ -27,7 +27,7 @@ export default function Hero() {
             <span className="strike mb-4 block">
               Leveraging cutting-edge AI to unlock growth at scale.
             </span>
-            AI wrote your content. Nobody read it. Let&apos;s fix that.
+            Your brand is regressing to the template.
           </motion.h1>
 
           <motion.p
@@ -36,10 +36,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 1.5 }}
             className="mt-8 max-w-xl leading-relaxed text-body"
           >
-            Twenty years of deciding what&apos;s worth publishing: newspaper desks, an
-            $80M+ deep-tech brand build, then a trading platform&apos;s growth engine
-            across 150+ markets. I bring the red pen, and the attribution to prove what
-            converted.
+            Every AI-assisted brand is drifting toward the average of everything ever
+            written. I named the problem, and I build the counterweight: marketing worth
+            reading, with the receipts to prove it converts.
           </motion.p>
 
           <motion.div
@@ -49,8 +48,8 @@ export default function Hero() {
             className="mt-9 flex flex-wrap gap-3"
           >
             <Button href="/contact">Book a Call</Button>
-            <Button href="/speaking" variant="secondary">
-              Book Me to Speak
+            <Button href="/insights/regression-to-the-template" variant="secondary">
+              Read the Thinking
             </Button>
           </motion.div>
         </div>

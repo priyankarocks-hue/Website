@@ -2,37 +2,49 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { X, List } from "@phosphor-icons/react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 
 const navLinks = [
-  { href: "/about", label: "About" },
-  { href: "/speaking", label: "Speaking" },
-  { href: "/advisory", label: "Advisory" },
-  { href: "/products", label: "Course" },
-  { href: "/insights", label: "Insights" },
+  { href: "/#models", label: "Models", match: "/#models" },
+  { href: "/insights", label: "Column", match: "/insights" },
+  { href: "/speaking", label: "Speaking", match: "/speaking" },
+  { href: "/advisory", label: "Advisory", match: "/advisory" },
+  { href: "/products", label: "Course", match: "/products" },
+  { href: "/about", label: "About", match: "/about" },
 ];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
+  // Lock scroll while the overlay is open. Links close it on click.
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  const isActive = (match: string) => !match.startsWith("/#") && pathname.startsWith(match);
+
   return (
-    <header className="sticky top-0 z-50 border-b border-hair bg-paper/95 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-hair bg-paper">
       <Container className="flex h-18 items-center justify-between py-4">
         <Link href="/" className="font-display text-lg font-bold text-ink">
           Priyanka Joshi<span className="text-red-pen">.</span>
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-7 md:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              aria-current={pathname.startsWith(link.href) ? "page" : undefined}
+              aria-current={isActive(link.match) ? "page" : undefined}
               className={`text-sm transition-colors hover:text-ink ${
-                pathname.startsWith(link.href)
+                isActive(link.match)
                   ? "text-ink underline decoration-red-pen decoration-2 underline-offset-8"
                   : "text-sub"
               }`}
@@ -43,7 +55,7 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <Button href="/contact" variant="secondary" className="px-5 py-2 text-xs">
+          <Button href="/contact" className="px-5 py-2 text-xs">
             Book a Call
           </Button>
         </div>
@@ -52,35 +64,38 @@ export default function Header() {
           type="button"
           className="text-ink md:hidden"
           aria-expanded={open}
-          aria-label="Toggle navigation menu"
+          aria-label={open ? "Close navigation menu" : "Open navigation menu"}
           onClick={() => setOpen((prev) => !prev)}
         >
-          <span className="block h-0.5 w-6 bg-current" />
-          <span className="mt-1.5 block h-0.5 w-6 bg-current" />
-          <span className="mt-1.5 block h-0.5 w-6 bg-current" />
+          {open ? <X size={26} /> : <List size={26} />}
         </button>
       </Container>
 
+      {/* Full-screen paper overlay on mobile */}
       {open ? (
-        <nav className="border-t border-hair bg-paper px-6 py-4 md:hidden">
-          <ul className="flex flex-col gap-4">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="block text-sm text-sub hover:text-ink"
-                  onClick={() => setOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-            <li>
+        <nav className="fixed inset-0 top-[72px] z-40 flex flex-col bg-paper md:hidden">
+          <Container className="flex flex-1 flex-col py-8">
+            <ul className="flex flex-col">
+              {navLinks.map((link) => (
+                <li key={link.href} className="border-b border-hair">
+                  <Link
+                    href={link.href}
+                    className={`block py-5 font-display text-2xl font-bold ${
+                      isActive(link.match) ? "text-red-pen" : "text-ink"
+                    }`}
+                    onClick={() => setOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-auto pb-6 pt-8" onClick={() => setOpen(false)}>
               <Button href="/contact" className="w-full">
                 Book a Call
               </Button>
-            </li>
-          </ul>
+            </div>
+          </Container>
         </nav>
       ) : null}
     </header>

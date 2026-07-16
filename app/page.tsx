@@ -1,6 +1,7 @@
 import Hero from "@/components/sections/Hero";
 import ProofStrip from "@/components/sections/ProofStrip";
 import PressBand from "@/components/sections/PressBand";
+import ModelsIndex from "@/components/sections/ModelsIndex";
 import MediaLogos from "@/components/sections/MediaLogos";
 import GoalCTAGrid from "@/components/sections/GoalCTAGrid";
 import PageTeasers from "@/components/sections/PageTeasers";
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <Hero />
       <ProofStrip />
+      <ModelsIndex />
       <AIToolsStack />
       <PressBand />
       <PageTeasers />

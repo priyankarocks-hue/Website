@@ -10,7 +10,7 @@ export default function AIToolsStack() {
     <section className="relative py-24">
       <Container>
         <h2 className="font-display text-2xl font-bold text-ink sm:text-3xl">
-          Four systems. One growth engine.
+          The counterweight: four systems, one growth engine.
         </h2>
         <p className="mt-4 max-w-2xl leading-relaxed text-body">
           These are my methods: proven at scale, designed fresh for every team. I set the

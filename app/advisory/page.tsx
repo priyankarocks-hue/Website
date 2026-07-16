@@ -44,6 +44,13 @@ export default function AdvisoryPage() {
             title="Marketing leadership that ships, without the full-time salary"
             description="I directed growth on a $1M+/month budget for customers across 150+ markets. You get the expertise, not a recycled toolkit: a system designed for your funnel, your team, your stage. No vendor kickbacks, no borrowed playbooks."
           />
+          <p className="mt-4 text-sm text-body">
+            Before you book anything, read{" "}
+            <a href="/casework" className="font-semibold text-red-pen hover:underline">
+              the case files
+            </a>
+            . That&apos;s the standard I&apos;ll be held to here.
+          </p>
         </Container>
       </section>
 

@@ -6,7 +6,7 @@ import MediaLogos from "@/components/sections/MediaLogos";
 import GoalCTAGrid from "@/components/sections/GoalCTAGrid";
 import PageTeasers from "@/components/sections/PageTeasers";
 import AIToolsStack from "@/components/sections/AIToolsStack";
-import TestimonialStrip from "@/components/sections/TestimonialStrip";
+import CaseworkTeaser from "@/components/sections/CaseworkTeaser";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       <PressBand />
       <PageTeasers />
       <GoalCTAGrid />
-      <TestimonialStrip />
+      <CaseworkTeaser />
       <MediaLogos />
     </>
   );

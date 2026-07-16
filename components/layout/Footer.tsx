@@ -6,6 +6,7 @@ const columns = [
   {
     title: "Work with me",
     links: [
+      { href: "/casework", label: "Casework" },
       { href: "/advisory", label: "Advisory services" },
       { href: "/speaking", label: "Book a keynote" },
       { href: "/products", label: "The course" },

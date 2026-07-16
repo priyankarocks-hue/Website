@@ -98,6 +98,14 @@ export default function SpeakingPage() {
         </Container>
       </section>
 
+      <section className="py-10">
+        <Container>
+          <p className="text-sm text-body">
+            Recent stage: <span className="font-semibold text-ink">The MarTech Summit Asia 2025</span>, Marina Bay Sands, Singapore.
+          </p>
+        </Container>
+      </section>
+
       <section className="py-16">
         <Container>
           <SectionHeading title="Check availability for your event" align="center" />
